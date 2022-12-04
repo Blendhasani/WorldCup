@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+5snGVLcEOyTCTSM6UefCiEb4QMz4lrC42twnZi1XyQ=",
+  "Hash": "SVn54XnpqaEtEvNbcASaIt95k1cBkejvCWSh9Kk5vmM=",
   "Source": "WorldCup",
   "BasePath": "_content/WorldCup",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\logo.png",
+      "SourceId": "WorldCup",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\",
+      "BasePath": "_content/WorldCup",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\js\\site.js",
