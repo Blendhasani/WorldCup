@@ -1,131 +1,163 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css",
       "PackagePath": "staticwebassets\\WorldCup.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Graphik Arabic Medium.otf",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\css\\Graphik Arabic Medium.otf",
       "PackagePath": "staticwebassets\\css\\Graphik Arabic Medium.otf"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Bold.ttf",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Bold.ttf",
       "PackagePath": "staticwebassets\\css\\Qatar2022Arabic-Bold.ttf"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Heavy.ttf",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Heavy.ttf",
       "PackagePath": "staticwebassets\\css\\Qatar2022Arabic-Heavy.ttf"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\logo.png",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\arg_mex.jpg",
+      "PackagePath": "staticwebassets\\images\\arg_mex.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\f1.jpg",
+      "PackagePath": "staticwebassets\\images\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\f2.jpg",
+      "PackagePath": "staticwebassets\\images\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\jap_spa.jpg",
+      "PackagePath": "staticwebassets\\images\\jap_spa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\net_usa.jpg",
+      "PackagePath": "staticwebassets\\images\\net_usa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\ser_swi.jpg",
+      "PackagePath": "staticwebassets\\images\\ser_swi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\tun_fra.jpg",
+      "PackagePath": "staticwebassets\\images\\tun_fra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\images\\wal_eng.jpg",
+      "PackagePath": "staticwebassets\\images\\wal_eng.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.min.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\mdb.min.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\mdb.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Blend\\source\\repos\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

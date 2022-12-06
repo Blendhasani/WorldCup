@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Highlights>
+@{
+	ViewData["Title"] = "Highlights";
+}
+<div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
+	@foreach(var item in Model){
+		<div class="col-md-4 col-xs-6 mb-3" style="margin-bottom:30px;" >
+			@*<div class="card shadow mt-5  bg-white rounded" style="max-width: 650px; min-width:201px; min-height:350px;">*@
+				<div class="row g-0">
+
+					<div class="col-md-12">
+						
+
+							<p class="card-text float-right" style="margin-right:25px;">
+
+								<a class="text-dark float-right" style="padding:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
+
+								<a class="text-dark float-right" style="padding:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
+
+
+
+							</p>
+						
+					</div>
+
+
+				<div class="col-md-12 mx-auto" >
+						<a asp-action="Details" asp-route-id="@item.Id">
+						<img src="@item.ImgUrl" style=" width: 100%;
+    height: 40vh;
+    object-fit:contain;padding-left:10px;padding-right:10px;" alt="@item.Title">
+						</a>
+
+					</div>
+
+
+				<div class="col-md-12  mb-3" >
+
+
+
+				<p class="card-text " style="font-family:Google Sans,arial,sans-serif; font-size:clamp(17px,3vw,20px); display:flex;flex-direction:row;justify-content:space-around;">
+					<b>@item.Title</b>
+					
+				</p>
+
+
+
+
+			</div>
+				@*</div>*@
+			</div>
+			
+
+		</div>
+
+	}
+
+</div>

@@ -19,7 +19,7 @@
  
 </head>
 <body>
-	<header style="position: fixed;top: 0;  width: 100%; z-index: 999; ">
+    <header style="position: fixed;top: 0;  width: 100%; z-index: 999; ">
 		<nav style="background-color:#8A1538;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand d-inline-flex align-content-center" asp-area="" asp-controller="Home" asp-action="Index"><img src="../images/logo.png" style="width:50px; height:45px; " /> <h2 style="font-family:Qatar; margin:6px 0px 0px 0px">World Cup 2022</h2></a>
@@ -38,7 +38,7 @@
 							<a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">News</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Highlights</a>
+							<a class="nav-link text-white" asp-area="" asp-controller="Highlights" asp-action="Index">Highlights</a>
 						</li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle"
@@ -148,7 +148,7 @@
                             <a asp-controller="Home" asp-action="Privacy"  class="text-reset">News</a>
                         </p>
                         <p>
-                            <a asp-controller="Home" asp-action="Privacy" class="text-reset">Highlights</a>
+                            <a asp-controller="Highlights" asp-action="Index" class="text-reset">Highlights</a>
                         </p>
                         
                     </div>
