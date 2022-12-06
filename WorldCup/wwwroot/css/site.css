@@ -1,5 +1,20 @@
+@font-face {
+    font-family: Qatar;
+    src: url('Qatar2022Arabic-Bold.ttf');
+  
+}
+@font-face {
+    font-family: Qatar-light;
+    src: url('Graphik Arabic Medium.ttf');
+}
+
+
+
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: Qatar;
 }
 
 @media (min-width: 768px) {
@@ -9,8 +24,9 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+
 }
 
 body {
