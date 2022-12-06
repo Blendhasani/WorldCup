@@ -1,11 +1,15 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using WorldCup.Data;
+using WorldCup.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+//Konfigurimi i serviceve
+builder.Services.AddScoped<IHighlightsService, HighlightsService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
