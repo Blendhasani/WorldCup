@@ -32,3 +32,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fff #c4c4c4;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/**::-webkit-scrollbar-track { 
+     background: #fff; 
+ }/ 
+
+     *::-webkit-scrollbar-thumb { 
+         background-color: #c4c4c4; 
+     }
