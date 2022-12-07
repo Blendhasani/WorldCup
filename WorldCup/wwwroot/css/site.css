@@ -43,10 +43,10 @@ body {
     width: 10px;
 }
 
-/**::-webkit-scrollbar-track { 
+/*::-webkit-scrollbar-track { 
      background: #fff; 
- }/ 
+ }*/
 
-     *::-webkit-scrollbar-thumb { 
-         background-color: #c4c4c4; 
-     }
+*::-webkit-scrollbar-thumb {
+    background-color: #8A1538;
+}
