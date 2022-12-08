@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using WorldCup.Data.Services;
+using WorldCup.Models;
 
 namespace WorldCup.Controllers
 {
@@ -13,6 +15,24 @@ namespace WorldCup.Controllers
         {
             var data = await _highlightsService.GetAllAsync();
             return View(data);
+        }
+        //get
+        public IActionResult Create()
+        {
+            return View();
+        }
+        //Get :Highlights/Create
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("Title,Description,ImgUrl,VideoUrl")] Highlights Highlight)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(Highlight);
+            }
+            await _highlightsService.AddAsync(Highlight);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

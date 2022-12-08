@@ -1,37 +1,32 @@
 ﻿@model IEnumerable<Highlights>
 @{
 	ViewData["Title"] = "Highlights";
-}
+	<div class="text-end ">
+		<a asp-controller="Highlights" asp-action="Create" class="btn btn-success">Create</a>
+	</div>
+}	
 <div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
+
 	@foreach(var item in Model){
 		<div class="col-md-4 col-xs-6 mb-3" style="margin-bottom:30px;" >
 			@*<div class="card shadow mt-5  bg-white rounded" style="max-width: 650px; min-width:201px; min-height:350px;">*@
 				<div class="row g-0">
+					<div class="col-md-12 mx-auto">
+						<a asp-action="Details" asp-route-id="@item.Id">
+							<img src="@item.ImgUrl" class="" style=" width: 100%;
+							object-fit:contain;" alt="@item.Title">
+							</a>
+						</div>
 
 					<div class="col-md-12">
-						
-
 							<p class="card-text d-flex justify-content-end" >
-
 						<a class="text-dark float-right fs-3 " style="padding:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
-
-								<a class="text-dark float-right fs-3" style="padding:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
-
-
-
+						<a class="text-dark float-right fs-3" style="padding:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
 							</p>
-						
 					</div>
 
 
-				<div class="col-md-12 mx-auto" >
-						<a asp-action="Details" asp-route-id="@item.Id">
-						<img src="@item.ImgUrl" class="" style=" width: 100%;
-						object-fit:contain;" alt="@item.Title">
-						</a>
-
-					</div>
-
+				
 
 				<div class="col-md-12  mb-3" >
 
