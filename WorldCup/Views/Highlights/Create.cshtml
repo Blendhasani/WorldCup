@@ -16,8 +16,8 @@
                 <form asp-action="Create">
                     <div asp-validation-summary="ModelOnly" class="text-danger">
                     </div>
-                    <div class="form-group text-center">
-                        <img id="ImgPreview" />
+                    <div class="col-md-4 offset-4 text-center">
+                        <img width="100%" id="ImageUrlPreview" />
                     </div>
                     <div class="form-group">
                         <label asp-for="Title" class="control-label"></label>
@@ -39,6 +39,7 @@
                         <input asp-for="VideoUrl" class="form-control" />
                         <span asp-validation-for="VideoUrl" class="text-danger"></span>
                     </div>
+                   
                     <div class="form-group">
                         <input type="submit" value="Create" class="btn btn-outline-success float-right" />
                         <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
@@ -48,17 +49,11 @@
         </div>
     </div>
 </div>
-
 @section Scripts{
     <script>
-        $(document).ready(function () {
-            var output = document.getElementById('ImgPreview');
-            output.src = $("#ImgUrl").val();
-        })
         $("#ImgUrl").on("change", function () {
-            var output = document.getElementById('ImgPreview');
+            var output = document.getElementById("ImageUrlPreview");
             output.src = $(this).val();
-
         })
     </script>
 }
