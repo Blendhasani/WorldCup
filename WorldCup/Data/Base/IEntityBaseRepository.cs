@@ -2,7 +2,7 @@
 {
     public interface IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IEnumerable<T>> GetAllAsync(int? page);
 
         Task<T> GetByIdAsync(int id);
 

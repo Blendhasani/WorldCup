@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using X.PagedList;
 
 namespace WorldCup.Data.Base
 {
@@ -27,11 +29,13 @@ namespace WorldCup.Data.Base
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync(int? page)
         {
-            var result = await _context.Set<T>().ToListAsync();
-            return result;
-        }
+			var pageNumber = page ?? 1;
+			int pageSize = 6;
+			var result = _context.Set<T>().ToPagedList(pageNumber, pageSize);
+			return result;
+		}
 
         public async Task<T> GetByIdAsync(int id)
         {

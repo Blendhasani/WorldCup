@@ -11,9 +11,9 @@ namespace WorldCup.Controllers
         public HighlightsController(IHighlightsService highlightsService ) {
         _highlightsService= highlightsService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
-            var data = await _highlightsService.GetAllAsync();
+            var data = await _highlightsService.GetAllAsync(page);
             return View(data);
         }
         //get
@@ -33,6 +33,12 @@ namespace WorldCup.Controllers
             }
             await _highlightsService.AddAsync(Highlight);
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var highlightsDetails =await _highlightsService.GetByIdAsync(id);
+            return View(highlightsDetails);
         }
     }
 }
