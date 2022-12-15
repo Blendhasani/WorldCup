@@ -12,8 +12,8 @@ using WorldCup.Data;
 namespace WorldCup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221215164626_News_Table")]
-    partial class News_Table
+    [Migration("20221215212445_tables")]
+    partial class tables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
