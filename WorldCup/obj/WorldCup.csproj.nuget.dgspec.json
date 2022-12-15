@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
         "projectName": "WorldCup",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
