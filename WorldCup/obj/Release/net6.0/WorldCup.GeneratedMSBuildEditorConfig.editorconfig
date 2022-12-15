@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

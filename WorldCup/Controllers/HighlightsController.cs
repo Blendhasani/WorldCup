@@ -61,5 +61,23 @@ namespace WorldCup.Controllers
             await _highlightsService.UpdateAsync(id,Highlight);
             return RedirectToAction(nameof(Index));
         }
+
+        //Highlights/Delete/1
+        public async Task<IActionResult> Delete(int id)
+        {
+            var highlightsDetails = await _highlightsService.GetByIdAsync(id);
+            if (highlightsDetails == null) return View("NotFound");
+            return View(highlightsDetails);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> Deleteconfirmed(int id)
+        {
+            var highlightsDetails = await _highlightsService.GetByIdAsync(id);
+            if (highlightsDetails == null) return View("NotFound");
+
+            await _highlightsService.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

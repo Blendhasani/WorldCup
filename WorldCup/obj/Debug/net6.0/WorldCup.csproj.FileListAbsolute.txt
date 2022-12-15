@@ -349,3 +349,11 @@ C:\Users\Benet\source\repos\WorldCup\WorldCup\obj\Debug\net6.0\staticwebassets\m
 C:\Users\Benet\source\repos\WorldCup\WorldCup\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WorldCup.props
 C:\Users\Benet\source\repos\WorldCup\WorldCup\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WorldCup.props
 C:\Users\Benet\source\repos\WorldCup\WorldCup\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\obj\Debug\net6.0\WorldCup.MvcApplicationPartsAssemblyInfo.cs
