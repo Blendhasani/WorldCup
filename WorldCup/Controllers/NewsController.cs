@@ -44,5 +44,26 @@ namespace WorldCup.Controllers
 			await _newsService.AddAsync(newNews);
 			return RedirectToAction(nameof(Index));
 		}
-	}
+
+        // Edit
+        public async Task<IActionResult> Edit(int id)
+        {
+            var newsDetails = await _newsService.GetByIdAsync(id);
+            if (newsDetails == null) return View("NotFound");
+            return View(newsDetails);
+        }
+        //News/Edit
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id,[Bind("Id,Title,Description,ThumbnailUrl,SecondaryImageUrl,VideoUrl,CreatedDate")] News news)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(news);
+            }
+          
+            await _newsService.UpdateAsync(id, news);
+            return RedirectToAction(nameof(Index));
+        }
+    }
 }

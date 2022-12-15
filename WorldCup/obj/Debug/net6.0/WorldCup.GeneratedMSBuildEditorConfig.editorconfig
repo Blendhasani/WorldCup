@@ -9,65 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WorldCup
 build_property.RootNamespace = WorldCup
-build_property.ProjectDir = C:\Users\Blend\source\repos\WorldCup\WorldCup\
+build_property.ProjectDir = C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Blend\source\repos\WorldCup\WorldCup
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Highlights/Create.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Highlights/Delete.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Highlights/Details.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Highlights/Edit.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Highlights/Index.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Highlights/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Home/Index.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/News/Create.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/News/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/News/Index.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/News/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/News/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Shared/Error.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/_ViewStart.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Blend/source/repos/WorldCup/WorldCup/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/Documents/GitHub/WorldCup/WorldCup/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z4l0f183a0
