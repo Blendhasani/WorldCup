@@ -1,0 +1,63 @@
+﻿@model News
+@{
+    ViewData["Title"] = "Add a new News";
+}
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>Add a new News</h1>
+        </p>
+
+
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger">
+                    </div>
+                    <div class="col-md-4 offset-4 text-center">
+                        <img width="100%" id="ImageUrlPreview" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <textarea row="3" asp-for="Description" class="form-control"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ThumbnailUrl" class="control-label"></label>
+                        <input asp-for="ThumbnailUrl" class="form-control" />
+                        <span asp-validation-for="ThumbnailUrl" class="text-danger"></span>
+                    </div>
+                        <div class="form-group">
+                        <label asp-for="SecondaryImageUrl" class="control-label"></label>
+                        <input asp-for="SecondaryImageUrl" class="form-control" />
+                        <span asp-validation-for="SecondaryImageUrl" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="VideoUrl" class="control-label"></label>
+                        <input asp-for="VideoUrl" class="form-control" />
+                        <span asp-validation-for="VideoUrl" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $("#ImgUrl").on("change", function () {
+            var output = document.getElementById("ImageUrlPreview");
+            output.src = $(this).val();
+        })
+    </script>
+}

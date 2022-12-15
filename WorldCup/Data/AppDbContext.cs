@@ -8,5 +8,6 @@ namespace WorldCup.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Highlights> Highlights { get; set; }
-    }
+        public DbSet<News> News { get; set; }
+	}
 }

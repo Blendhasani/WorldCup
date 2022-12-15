@@ -1,27 +1,31 @@
 ﻿using Newtonsoft.Json.Serialization;
 using System.ComponentModel.DataAnnotations;
+using WorldCup.Data.Base;
 
 namespace WorldCup.Models
 {
-    public class News
+    public class News : IEntityBase
     {
         [Key]
         public int Id { get; set; }
         [Required]
         [StringLength(50)]
-        [RegularExpression(@"^[A-Z].*", ErrorMessage ="Start with big letter")]
+        [RegularExpression(@"^[A-Z].*", ErrorMessage ="The title cannot be empty and you should start with capital letter")]
         public string Title { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Description cannot be empty or more than 5000 characters")]
         [StringLength(5000)]
         public string Description { get; set; }
-        [Required]
-        [Url]
+        [Required(ErrorMessage = "Thumbnail Url cannot be empty")]
+
         public string ThumbnailUrl { get; set; }
         
-        [Url]
-        public string? SecondaryImageUrl { get; set; }
-        [Required]
         
-        public DateTime Date { get; set; }
+        public string? SecondaryImageUrl { get; set; }
+
+        public string? VideoUrl { get; set; }
+
+
+        public DateTime CreatedDate { get; set; }
+        
     }
 }
