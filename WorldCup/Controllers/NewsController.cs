@@ -74,7 +74,12 @@ namespace WorldCup.Controllers
 			if (newsDetails == null) return View("NotFound");
 			return View(newsDetails);
 		}
-		
+
+		public async Task<IActionResult> Details(int id)
+		{
+			var newsDetails = await _newsService.GetByIdAsync(id);
+			return View(newsDetails);
+		}
 
 		[HttpPost, ActionName("Delete")]
 		public async Task<IActionResult> DeleteConfirmed(int id)

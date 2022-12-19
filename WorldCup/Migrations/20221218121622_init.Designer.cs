@@ -12,8 +12,8 @@ using WorldCup.Data;
 namespace WorldCup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221215212445_tables")]
-    partial class tables
+    [Migration("20221218121622_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

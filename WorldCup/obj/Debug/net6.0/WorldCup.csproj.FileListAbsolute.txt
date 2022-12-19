@@ -357,3 +357,13 @@ C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Newtonsoft.Js
 C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.dll
 C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
 C:\Users\Admin\Documents\GitHub\WorldCup\WorldCup\obj\Debug\net6.0\WorldCup.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\PagedList.Core.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\PagedList.Core.Mvc.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\obj\Debug\net6.0\WorldCup.MvcApplicationPartsAssemblyInfo.cs
