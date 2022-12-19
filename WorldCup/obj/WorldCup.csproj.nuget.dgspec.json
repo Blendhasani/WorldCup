@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Benet\\source\\repos\\WorldCup\\WorldCup\\WorldCup.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Benet\\source\\repos\\WorldCup\\WorldCup\\WorldCup.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Benet\\source\\repos\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
         "projectName": "WorldCup",
-        "projectPath": "C:\\Users\\Benet\\source\\repos\\WorldCup\\WorldCup\\WorldCup.csproj",
-        "packagesPath": "C:\\Users\\Benet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Benet\\source\\repos\\WorldCup\\WorldCup\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Benet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
