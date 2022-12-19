@@ -9,5 +9,6 @@ namespace WorldCup.Data
 
         public DbSet<Highlights> Highlights { get; set; }
         public DbSet<News> News { get; set; }
+		public DbSet<Author> Authors { get; set; }
 	}
 }

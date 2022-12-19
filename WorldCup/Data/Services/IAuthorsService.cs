@@ -3,7 +3,7 @@ using WorldCup.Models;
 
 namespace WorldCup.Data.Services
 {
-    public interface IHightlightsService:IEntityBaseRepository<Highlights>
+    public interface IAuthorsService : IEntityBaseRepository<Author>
     {
 
     }

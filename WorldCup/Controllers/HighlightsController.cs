@@ -7,8 +7,8 @@ namespace WorldCup.Controllers
 {
     public class HighlightsController : Controller
     {
-        private readonly IHighlightsService _highlightsService;
-        public HighlightsController(IHighlightsService highlightsService ) {
+        private readonly IHightlightsService _highlightsService;
+        public HighlightsController(IHightlightsService highlightsService ) {
         _highlightsService= highlightsService;
         }
         public async Task<IActionResult> Index(int? page)
