@@ -24,7 +24,7 @@ namespace WorldCup.Controllers
         //Get :Highlights/Create
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Title,Description,ImgUrl,VideoUrl")] Highlights Highlight)
+        public async Task<IActionResult> Create([Bind("Title,Description,ImgUrl,VideoUrl,Au")] Highlights Highlight)
         {
 
             if (!ModelState.IsValid)

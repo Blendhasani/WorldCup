@@ -367,3 +367,5 @@ C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\PagedList.Co
 C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.dll
 C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
 C:\Users\Lenovo\Documents\GitHub\WorldCup\WorldCup\obj\Debug\net6.0\WorldCup.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Blend\source\repos\WorldCup\WorldCup\bin\Debug\net6.0\PagedList.Core.dll
+C:\Users\Blend\source\repos\WorldCup\WorldCup\bin\Debug\net6.0\PagedList.Core.Mvc.dll

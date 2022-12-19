@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorldCup.Data;
 
@@ -11,9 +12,10 @@ using WorldCup.Data;
 namespace WorldCup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221219204924_NewsAuthorRelationShip")]
+    partial class NewsAuthorRelationShip
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,17 +121,12 @@ namespace WorldCup.Migrations
             modelBuilder.Entity("WorldCup.Models.News", b =>
                 {
                     b.HasOne("WorldCup.Models.Author", "Author")
-                        .WithMany("News")
+                        .WithMany()
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
-                });
-
-            modelBuilder.Entity("WorldCup.Models.Author", b =>
-                {
-                    b.Navigation("News");
                 });
 #pragma warning restore 612, 618
         }

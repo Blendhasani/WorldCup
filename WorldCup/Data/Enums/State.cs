@@ -1,6 +1,6 @@
 ﻿namespace WorldCup.Data.Enums
 {
-	{
+	
     public enum State
 	{
 		Argentina = 1,
@@ -37,4 +37,4 @@
 		Wales
 	}
 }
-}
+

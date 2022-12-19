@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Base\Services\**" />
+    <Content Remove="Data\Base\Services\**" />
+    <EmbeddedResource Remove="Data\Base\Services\**" />
+    <None Remove="Data\Base\Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
@@ -15,10 +22,6 @@
     </PackageReference>
     <PackageReference Include="PagedList.Core.Mvc" Version="3.0.0" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="7.6.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Base\Services\IServices\" />
   </ItemGroup>
 
 </Project>

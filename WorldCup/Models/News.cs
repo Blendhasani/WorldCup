@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using WorldCup.Data.Base;
 
 namespace WorldCup.Models
@@ -25,6 +26,11 @@ namespace WorldCup.Models
 
 
         public DateTime CreatedDate { get; set; }
+        [Display(Name ="Select an Author")]
+        public int AuthorId { get; set; }
+        [ForeignKey("AuthorId")]
+
+        public Author Author { get; set; }
         
     }
 }

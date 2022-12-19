@@ -13,5 +13,7 @@ namespace WorldCup.Models
         [Required(ErrorMessage = "Surname is required")]
         [Display(Name = "Surname")]
         public string Surname{ get; set; }
+
+		public List<News> News { get; set; }
 	}
 }

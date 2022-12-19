@@ -12,8 +12,8 @@ using WorldCup.Data;
 namespace WorldCup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221219190802_Authors")]
-    partial class Authors
+    [Migration("20221219201522_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

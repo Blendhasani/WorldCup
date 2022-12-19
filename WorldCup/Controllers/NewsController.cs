@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WorldCup.Data.Services;
 using WorldCup.Models;
 
@@ -18,30 +19,27 @@ namespace WorldCup.Controllers
         }
 
 		//get
-		public IActionResult Create()
+		public async Task<IActionResult> Create()
 		{
-			return View();
+			var newsDropdownData = await _newsService.GetNewsDropdownValues();
+			ViewBag.Authors = new SelectList(newsDropdownData.Authors, "Id", "Name"); 
+
+            return View();
 		}
 		//Get :News/Create
 
 		[HttpPost]
-		public async Task<IActionResult> Create([Bind("Title,Description,ThumbnailUrl,SecondaryImageUrl,VideoUrl,CreatedDate")] News news)
+		public async Task<IActionResult> Create(News news)
 		{
 
 			if (!ModelState.IsValid)
 			{
-				return View(news);
+                var newsDropdownData = await _newsService.GetNewsDropdownValues();
+                ViewBag.Authors = new SelectList(newsDropdownData.Authors, "Id", "Name");
+
+                return View(news);
 			}
-			var newNews = new News()
-			{
-				Title = news.Title,
-				Description = news.Description,
-				ThumbnailUrl = news.ThumbnailUrl,
-				SecondaryImageUrl = news.SecondaryImageUrl,
-				VideoUrl = news.VideoUrl,
-				CreatedDate = DateTime.Now,
-			};
-			await _newsService.AddAsync(newNews);
+		 await _newsService.AddNewNewsAsync(news);
 			return RedirectToAction(nameof(Index));
 		}
 
@@ -50,17 +48,36 @@ namespace WorldCup.Controllers
         {
             var newsDetails = await _newsService.GetByIdAsync(id);
             if (newsDetails == null) return View("NotFound");
-            return View(newsDetails);
+			var response = new News()
+			{
+				Title = newsDetails.Title,
+				Description = newsDetails.Description,
+				ThumbnailUrl = newsDetails.ThumbnailUrl,
+				SecondaryImageUrl = newsDetails.SecondaryImageUrl,
+				VideoUrl = newsDetails.VideoUrl,
+				CreatedDate = DateTime.Now,
+				AuthorId = newsDetails.AuthorId,
+			};
+			var newsDropdownData = await _newsService.GetNewsDropdownValues();
+			ViewBag.Authors = new SelectList(newsDropdownData.Authors, "Id", "Name");
+			return View(newsDetails);
         }
         //News/Edit
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id,[Bind("Id,Title,Description,ThumbnailUrl,SecondaryImageUrl,VideoUrl,CreatedDate")] News news)
+        public async Task<IActionResult> Edit(int id, News news)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(news);
-            }
+
+			if(id !=news.Id)
+			{
+				if (!ModelState.IsValid)
+				{
+					var newsDropdownData = await _newsService.GetNewsDropdownValues();
+					ViewBag.Authors = new SelectList(newsDropdownData.Authors, "Id", "Name");
+					return View(news);
+				}
+			}
+          
           
             await _newsService.UpdateAsync(id, news);
             return RedirectToAction(nameof(Index));
