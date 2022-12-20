@@ -34,7 +34,16 @@ namespace WorldCup.Data.Services
         };
          return response;
         }
-}
+
+		public async Task<News> GetNewsByIdAsync(int id)
+		{
+			var newsDetails = await _context.News
+				.Include(c => c.Author)
+				.FirstOrDefaultAsync(n => n.Id == id);
+
+			return newsDetails;
+		}
+	}
          
            
         }

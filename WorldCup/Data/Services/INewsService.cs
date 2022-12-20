@@ -8,5 +8,7 @@ namespace WorldCup.Data.Services
     {
         Task<NewsDropdown> GetNewsDropdownValues();
         Task AddNewNewsAsync(News news);
-    }
+        Task<News> GetNewsByIdAsync(int id);
+
+	}
 }

@@ -94,7 +94,7 @@ namespace WorldCup.Controllers
 
 		public async Task<IActionResult> Details(int id)
 		{
-			var newsDetails = await _newsService.GetByIdAsync(id);
+			var newsDetails = await _newsService.GetNewsByIdAsync(id);
 			return View(newsDetails);
 		}
 
