@@ -1,18 +1,10 @@
-﻿@using X.PagedList.Mvc.Core;
-@using X.PagedList;
+﻿
 @model IEnumerable<Product>
 
 @{
-	ViewData["Title"] = "Products";
-	<div class="text-end ">
-		<a asp-controller="Products" asp-action="Create" class="btn btn-success">Create</a>
-	</div>
-	<form class="form-inline" style="display:flex;flex-direction:row; width:20%;  asp-controller="Products" asp-action="Filter">
-		<input name="searchString" type="text"style="width:100%;" class="form-control" placeholder="Search product...">
-		<button class="btn btn-outline-success" style="padding-left:5px; type="submit"><i class="bi bi-search"></i></button>
-	</form>
+	ViewData["Title"] = "Products filtered";
+
 }
-	
 <div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
 
 	@foreach (var item in Model)
@@ -70,27 +62,3 @@
 
 
 	}
-	<div class=" d-flex align-items-center justify-content-center mt-4">
-			@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }),
-	new X.PagedList.Mvc.Common.PagedListRenderOptions
-	{
-	DisplayItemSliceAndTotal = true,
-	ContainerDivClasses = new[] { "navigation" },
-	LiElementClasses = new[] { "page-item" },
-	PageClasses = new[] { "page-link" },
-	})
-	</div>
-
-
-</div>
-
-@section Scripts{
-	<script>
-		// Workaround to fix style of text for showing items .. through ..
-		// Problem related to Boostrap 4 according to issue in link below
-		// https://github.com/dncuug/X.PagedList/issues/127
-		$(document).ready(function () {
-			$('ul.pagination > li.disabled > a').addClass('page-link');
-		});
-	</script>
-}

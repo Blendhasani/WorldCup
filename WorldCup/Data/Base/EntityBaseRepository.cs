@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Linq.Expressions;
 using X.PagedList;
 
 namespace WorldCup.Data.Base
@@ -37,7 +38,14 @@ namespace WorldCup.Data.Base
 			return result;
 		}
 
-        public async Task<T> GetByIdAsync(int id)
+		public async Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includeProperties)
+		{
+			IQueryable<T> query = _context.Set<T>();
+			query = includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
+			return await query.ToListAsync();
+		}
+
+		public async Task<T> GetByIdAsync(int id)
         {
             var result = await _context.Set<T>().FirstOrDefaultAsync(n => n.Id == id);
             return result;

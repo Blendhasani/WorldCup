@@ -1,18 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PagedList.Core;
 using WorldCup.Data.Services;
+using WorldCup.Migrations;
 using WorldCup.Models;
+using X.PagedList;
 
 namespace WorldCup.Controllers
 {
 	public class ProductsController : Controller
 	{
 		private readonly IProductsService _productsService;
+	
 		public ProductsController(IProductsService productsService)
 		{
 			_productsService= productsService;
 		}
 		public async Task<IActionResult> Index(int? page)
 		{
+		
 
 			var allProducts = await _productsService.GetAllAsync(page);
 			return View(allProducts);
@@ -41,7 +46,7 @@ namespace WorldCup.Controllers
 		public async Task<IActionResult> Edit(int id)
 		{
 			var productDetails = await _productsService.GetByIdAsync(id);
-			if (productDetails == null) return View("Not Found");
+			if (productDetails == null) return View("NotFound");
 			return View(productDetails);
 		}
 
@@ -81,5 +86,18 @@ namespace WorldCup.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
+		public async Task<IActionResult> Filter(string searchString)
+		{
+			
+			var allProducts = await _productsService.GetAllAsync();
+			if(!string.IsNullOrEmpty(searchString))
+			{
+				var filterResults = allProducts.Where(n=>n.Name.ToLower().Contains(searchString) || n.Description.ToLower().Contains(searchString)).ToList();
+				
+				return View("Filtered", filterResults);
+			}
+			return View("Filtered", allProducts);
+		}
+		
 	}
 }

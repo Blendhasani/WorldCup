@@ -1,4 +1,6 @@
-﻿namespace WorldCup.Data.Base
+﻿using System.Linq.Expressions;
+
+namespace WorldCup.Data.Base
 {
     public interface IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {
@@ -11,6 +13,8 @@
         Task UpdateAsync(int id, T entity);
 
         Task DeleteAsync(int id);
+
+        Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includeProperties);
 
 
     }
