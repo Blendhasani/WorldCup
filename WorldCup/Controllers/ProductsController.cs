@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PagedList.Core;
 using WorldCup.Data.Services;
 using WorldCup.Migrations;
@@ -86,7 +87,7 @@ namespace WorldCup.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
-		public async Task<IActionResult> Filter(string searchString)
+	/*	public async Task<IActionResult> Filter(string searchString)
 		{
 			
 			var allProducts = await _productsService.GetAllAsync();
@@ -97,7 +98,8 @@ namespace WorldCup.Controllers
 				return View("Filtered", filterResults);
 			}
 			return View("Filtered", allProducts);
-		}
-		
+		}*/
+
+
 	}
 }
