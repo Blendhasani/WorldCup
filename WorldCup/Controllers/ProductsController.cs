@@ -87,18 +87,18 @@ namespace WorldCup.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
-	/*	public async Task<IActionResult> Filter(string searchString)
+		public async Task<IActionResult> Filter(string searchString)
 		{
-			
+
 			var allProducts = await _productsService.GetAllAsync();
-			if(!string.IsNullOrEmpty(searchString))
+			if (!string.IsNullOrEmpty(searchString))
 			{
-				var filterResults = allProducts.Where(n=>n.Name.ToLower().Contains(searchString) || n.Description.ToLower().Contains(searchString)).ToList();
-				
+				var filterResults = allProducts.Where(n => n.Name.ToLower().Contains(searchString) || n.Description.ToLower().Contains(searchString)).ToList();
+
 				return View("Filtered", filterResults);
 			}
 			return View("Filtered", allProducts);
-		}*/
+		}
 
 
 	}
