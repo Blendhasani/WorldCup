@@ -13,6 +13,7 @@ builder.Services.AddScoped<IHightlightsService, HighlightsService>();
 builder.Services.AddScoped<INewsService, NewsService>();
 builder.Services.AddScoped<IAuthorsService, AuthorsService>();
 builder.Services.AddScoped<IProductsService, ProductsService>();
+builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
