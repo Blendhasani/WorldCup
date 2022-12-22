@@ -14,6 +14,7 @@ builder.Services.AddScoped<INewsService, NewsService>();
 builder.Services.AddScoped<IAuthorsService, AuthorsService>();
 builder.Services.AddScoped<IProductsService, ProductsService>();
 builder.Services.AddScoped<IPlayersService, PlayersService>();
+builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
