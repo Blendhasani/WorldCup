@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WorldCup.Areas.Admin.Models;
 using WorldCup.Models;
 
 namespace WorldCup.Data
@@ -14,5 +15,7 @@ namespace WorldCup.Data
 
         public DbSet<Player> Players { get; set; }
         public DbSet<Stadium> Stadiums { get; set;}
+        public DbSet<Club> Clubs { get; set; }
+
 	}
 }
