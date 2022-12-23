@@ -11,9 +11,9 @@ namespace WorldCup.Controllers
         { 
             _stadiumsService = stadiumsService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
-            var allStadiums = await _stadiumsService.GetAllAsync();
+            var allStadiums = await _stadiumsService.GetAllAsync(page);
             return View(allStadiums);
         }
         //Get:
