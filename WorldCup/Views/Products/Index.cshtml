@@ -1,24 +1,47 @@
 ﻿@using X.PagedList.Mvc.Core;
 @using X.PagedList;
 @model IEnumerable<Product>
-
+<style>
+	
+</style>
 @{
 	ViewData["Title"] = "Products";
-	<div class="text-end ">
-		<a asp-controller="Products" asp-action="Create" class="btn btn-success">Create</a>
+	<div style="padding:10px 60px">
+	
+	<div class="text-end  ">
+			<a asp-controller="Products" asp-action="Sorting" class="btn btn-secondary btn-lg ">
+				<i class="fa-solid fa-table" style="font-size:20px !important"></i>
+			</a>
+		
 	</div>
-	<form class="form-inline" style="display:flex;flex-direction:row; width:20%;  asp-controller="Products" asp-action="Filter">
-		<input name="searchString" type="text"style="width:100%;" class="form-control" placeholder="Search product...">
-		<button class="btn btn-outline-success" style="padding-left:5px; type="submit"><i class="bi bi-search"></i></button>
-	</form>
+	
+	</div>
 }
 	
-<div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
+<div class="justify-content-center" style="display:flex;flex-wrap:wrap;margin-right:5vh; margin-left:5vh;margin-top:20px;">
 
 	@foreach (var item in Model)
 	{
+		<div class="card" style="width:40vh; margin:20px">
+			<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+				<img src="@item.ImgUrl" class="img-fluid" />
+				<a href="#!">
+					<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+				</a>
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">@item.Name</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a class="btn btn-success text-white" asp-controller="Orders" asp-action="AddToShoppingCart" asp-route-id="@item.Id">
 
-
+					<i class="bi bi-cart-plus"></i> Add to cart (@item.Price&euro;)
+				</a>
+			
+			</div>
+		</div>
+		
+@*
+	
 
 		<div class="col-md-3 col-sm-4 col-6 border-primary mb-3">
 			<div class="card mb-3 shadow  mb-6 bg-white rounded" style="max-width: 540px; min-width:201px; min-height:270px;">
@@ -29,12 +52,6 @@
 								<h5 class="card-title d-flex " style="flex-direction:row;justify-content:space-between;">
 									<div>
 										@item.Name
-									</div>
-
-									<div>
-										<a class="text-white justify-content-end" style="padding:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
-
-										<a class="text-white justify-content-end" style="padding:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
 									</div>
 
 								</h5>
@@ -66,7 +83,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>*@
 
 
 	}
