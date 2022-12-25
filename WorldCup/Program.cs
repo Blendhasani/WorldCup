@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using WorldCup.Areas.Admin.Data.Services;
 using WorldCup.Data;
 using WorldCup.Data.Services;
 
@@ -15,6 +17,7 @@ builder.Services.AddScoped<IAuthorsService, AuthorsService>();
 builder.Services.AddScoped<IProductsService, ProductsService>();
 builder.Services.AddScoped<IPlayersService, PlayersService>();
 builder.Services.AddScoped<IStadiumsService, StadiumsService>();
+builder.Services.AddScoped<IClubsService, ClubsService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,12 +39,19 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "area",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
 app.UseEndpoints(endpoints =>
 {
-	endpoints.MapControllerRoute(
-	  name: "areas",
-	  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-	);
+    endpoints.MapControllerRoute(
+      name: "MyArea",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    
 });
+
+
 AppDbInitializer.Seed(app);
 app.Run();

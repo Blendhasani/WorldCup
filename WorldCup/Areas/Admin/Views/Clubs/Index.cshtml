@@ -1,6 +1,56 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@using WorldCup.Areas.Admin.Models;
+@model IEnumerable<Club>
 @{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    <div class="text-end ">
+        <a asp-controller="Clubs" asp-action="Create" class="btn btn-success">Create</a>
+    </div>
+
 }
-<h1>Hello from admin area</h1>
+
+
+<div>
+
+    <table class="table">
+        <thead>
+            <tr>
+               
+               
+                <th>@Html.DisplayNameFor(model=>model.LogoUrl)</th>
+               @* <th>@Html.DisplayNameFor(model=>model.Name)</th>*@
+                <th>@Html.ActionLink("Name", "Sorting", new { sortOrder = ViewBag.NameSortParm })</th>
+                <th>@Html.DisplayNameFor(model=>model.Birthday)</th>
+                <th>@Html.DisplayNameFor(model=>model.State)</th>
+                <th>@Html.DisplayNameFor(model=>model.City)</th>
+                <th>Changes</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                   <td class="align-center">
+							<img src="@item.LogoUrl" alt="@item.Name" style="max-width:100px;" />
+						</td>
+                    <td style="align-content:center">@item.Name</td>
+                    <td style="align-content:center">@item.Birthday</td>
+                    <td style="align-content:center">@item.State</td>
+                    <td style="align-content:center">@item.City</td>
+                    <td style="align-content:center">
+                        <p class="card-text d-flex">
+                            <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
+                            <a class="text-dark float-right fs-3"  asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
+                        </p>
+                    </td>
+                </tr>
+                }
+
+           
+        </tbody>
+    </table>
+</div>
