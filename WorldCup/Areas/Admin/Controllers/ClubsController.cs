@@ -116,13 +116,13 @@ namespace WorldCup.Areas.Admin.Controllers
 
             return View(clubs.ToList());
         }
-  
-        /*[Route("Clubs/CheckUsernameAvailability/{userdata?}")]
+
+        [Route("Clubs/CheckUsernameAvailability/{userdata?}")]
         public JsonResult CheckUsernameAvailability(string userdata)
         {
             System.Threading.Thread.Sleep(200);
-            
-         
+
+
             var SeachData = _context.Clubs.Where(x => x.Name == userdata).SingleOrDefault();
             if (SeachData != null)
             {
@@ -133,6 +133,6 @@ namespace WorldCup.Areas.Admin.Controllers
                 return Json(0);
             }
 
-        }*/
+        }
     }
 }
