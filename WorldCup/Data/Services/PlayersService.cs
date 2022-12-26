@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WorldCup.Data.ViewModels;
 using WorldCup.Models;
 
 namespace WorldCup.Data.Services
@@ -36,11 +37,29 @@ namespace WorldCup.Data.Services
 			return result;
 		}
 
+		public async Task<PlayerDropdown> GetPlayerDropdownValues()
+		{
+			var response = new PlayerDropdown()
+			{
+				Clubs = await _context.Clubs.OrderBy(n => n.Name).ToListAsync()
+			};
+			return response;
+		}
+
 		public async Task<Player> UpdateAsync(int id, Player newPlayer)
 		{
 			_context.Update(newPlayer);
 			await _context.SaveChangesAsync();
 			return newPlayer;
+		}
+
+		public async Task<Player> GetPlayerByIdAsync(int id)
+		{
+			var playerDetails = await _context.Players
+				.Include(c => c.Club)
+				.FirstOrDefaultAsync(n => n.Id == id);
+
+			return playerDetails;
 		}
 	}
 }

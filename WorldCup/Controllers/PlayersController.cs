@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WorldCup.Data;
 using WorldCup.Data.Services;
 using WorldCup.Models;
@@ -21,16 +22,20 @@ namespace WorldCup.Controllers
 		}
 
 		//Get: Players/Create
-		public IActionResult Create()
-		{ 
+		public async Task<IActionResult> Create()
+		{
+			var playerDropdownData = await _service.GetPlayerDropdownValues();
+			ViewBag.Clubs = new SelectList(playerDropdownData.Clubs, "Id", "Name");
 			return View();
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Create([Bind("FullName,ProfilePictureURL,Bio")]Player player)
+		public async Task<IActionResult> Create(Player player)
 		{ 
 			if(!ModelState.IsValid)
 			{
+				var playerDropdownData = await _service.GetPlayerDropdownValues();
+				ViewBag.Clubs = new SelectList(playerDropdownData.Clubs, "Id", "Name");
 				return View(player);
 			}
 			await _service.AddAsync(player);
@@ -40,27 +45,48 @@ namespace WorldCup.Controllers
 		//Get: Actors/Details/1
 		public async Task<IActionResult> Details(int id)
 		{ 
-			var playerDetails = await _service.GetByIdAsync(id);
+			var playerDetails = await _service.GetPlayerByIdAsync(id);
 
 			if (playerDetails == null) return View("NotFound");
 			return View(playerDetails);
 		}
 
-		//Get: Players/Edit/1
-		public async Task <IActionResult> Edit(int id)
+
+		// Edit
+		public async Task<IActionResult> Edit(int id)
 		{
 			var playerDetails = await _service.GetByIdAsync(id);
 			if (playerDetails == null) return View("NotFound");
+			var response = new Player()
+			{
+				FullName=playerDetails.FullName,
+				Surname=playerDetails.Surname,
+				Bio=playerDetails.Bio,
+				Birthday=playerDetails.Birthday,
+				ClubId=playerDetails.ClubId,
+				State= playerDetails.State,
+			};
+			var playerDropdownData = await _service.GetPlayerDropdownValues();
+			ViewBag.Clubs = new SelectList(playerDropdownData.Clubs, "Id", "Name");
 			return View(playerDetails);
 		}
+
 
 		[HttpPost]
-		public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,ProfilePictureURL,Bio")] Player player)
+		public async Task<IActionResult> Edit(int id, Player player)
 		{
-			if (!ModelState.IsValid)
+
+			if (id != player.Id)
 			{
-				return View(player);
+				if (!ModelState.IsValid)
+				{
+					var playerDropdownData = await _service.GetPlayerDropdownValues();
+					ViewBag.Clubs = new SelectList(playerDropdownData.Clubs, "Id", "Name");
+					return View(player);
+				}
 			}
+
+
 			await _service.UpdateAsync(id, player);
 			return RedirectToAction(nameof(Index));
 		}

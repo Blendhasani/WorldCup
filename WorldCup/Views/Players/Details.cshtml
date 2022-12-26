@@ -1,33 +1,55 @@
-﻿@model Player
+﻿@*@using WorldCup.Data.Enums;
+@model Player
 
 @{
-	ViewData["Title"] = "Add a new player";
+	ViewData["Title"] = "Player Details";
 }
 
 <div class="row text">
 	<div class="col-md-8 offset-2">
 		<p>
-			<h1>Details for @Model.FullName</h1>
+			<h1>Details for @Model.FullName @Model.Surname</h1>
 		</p>
 		<div class="row">
 			<div class="col-md-8 offset-2">
 					<div class="form-group text-center">
 					<img class="border-info rounded-circle" style="max-width: 150px" id="ProfilePicturePreView" />
 				</div>
+				<div class="form-group text-center">
+					<img id="ProfilePicturePreView" class="border-info rounded-circle" style="max-width: 150px" />
+				</div>
 				<div class="form-group">
 					<label asp-for="ProfilePictureURL" class="control-label"></label>
-					<input asp-for="ProfilePictureURL" class="form-control" readonly />
+					<input asp-for="ProfilePictureURL" class="form-control" />
 					<span asp-validation-for="ProfilePictureURL" class="text-danger"></span>
 				</div>
 				<div class="form-group">
 					<label asp-for="FullName" class="control-label"></label>
-					<input asp-for="FullName" class="form-control" readonly />
+					<input asp-for="FullName" class="form-control" />
 					<span asp-validation-for="FullName" class="text-danger"></span>
 				</div>
 				<div class="form-group">
+					<label asp-for="Surname" class="control-label"></label>
+					<input asp-for="Surname" class="form-control" />
+					<span asp-validation-for="Surname" class="text-danger"></span>
+				</div>
+				<div class="form-group">
 					<label asp-for="Bio" class="control-label"></label>
-					<input asp-for="Bio" class="form-control" readonly />
+					<textarea asp-for="Bio" class="form-control" ></textarea>
 					<span asp-validation-for="Bio" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Birthday" class="control-label"></label>
+					<input asp-for="Birthday" type="date" class="form-control" />
+					<span asp-validation-for="Birthday" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="State" class="control-label"></label>
+					<select asp-for="State" class="form-control" asp-items="Html.GetEnumSelectList<State>()"></select>
+					<span asp-validation-for="State" class="text-danger"></span>
+				</div>
+				<div>
+					<h4>Club : @Model.Club.Id</h4>
 				</div>
 
 				<div class="form-group">
@@ -47,4 +69,41 @@
 				output.src = $("#ProfilePictureURL").val();
 			})
 		</script>
-}
+}*@
+
+@model Player
+
+
+<div style="padding-top:3%;">
+
+	<h2 style="font-family:Qatar; margin-bottom:5%;display: flex;
+  justify-content: center;">
+		@Model.FullName @Model.Surname
+	</h2>
+	<div style=" display: flex; flex-direction:column;
+  justify-content: center; ">
+		<img style=" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+" src="@Model.ProfilePictureURL" />
+		<p style=" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:3%;"><b>@Model.Birthday.ToString("dd MMM yy")</b></p>
+
+	</div>
+
+
+
+	
+	<p style="font-size:20;font-family:Google Sans,arial,sans-serif;margin-top:5%;"><i>@Model.Bio</i></p>
+	<div style="display:flex;flex-direction:row;justify-content:space-evenly;margin-top:5%;">
+		<h5>
+			Current Club : @Model.Club.Name
+		</h5>
+		<img src="@Model.Club.LogoUrl" style="height:60px;width:60px;" />
+	</div>
+	
+
+</div>

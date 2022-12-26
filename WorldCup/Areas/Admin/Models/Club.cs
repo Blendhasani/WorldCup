@@ -28,5 +28,8 @@ namespace WorldCup.Areas.Admin.Models
 		[Display(Name = "City")]
 		public string City { get; set; }
 
-	}
+        public List<Player> Players { get; set; }
+
+
+    }
 }

@@ -1,4 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using WorldCup.Areas.Admin.Models;
+using WorldCup.Data.Enums;
 
 namespace WorldCup.Models
 {
@@ -10,17 +14,35 @@ namespace WorldCup.Models
 
 		[Display(Name = "Profile Picture")]
 		[Required(ErrorMessage = "Profile Picture is required")]
-
 		public string ProfilePictureURL { get; set; }
-		[Display(Name = "Full Name")]
-		[Required(ErrorMessage = "Full Name is required")]
-		[StringLength(50, MinimumLength = 3, ErrorMessage = "Full Name must be between 3 and 50 chars")]
+		
+		[Display(Name = "Name")]
+		[Required(ErrorMessage = "Name is required")]
+		[StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 chars")]
 
 		public string FullName { get; set; }
+
+		[Display(Name = "Surname")]
+		[Required(ErrorMessage = "Surname is required")]
+		[StringLength(50, MinimumLength = 3, ErrorMessage = "Surname must be between 3 and 50 chars")]
+
+		public string Surname { get; set; }
+		public DateTime Birthday { get; set; }
+
+
+
 		[Display(Name = "Biography")]
 		[Required(ErrorMessage = "Biography is required")]
-
 		public string Bio { get; set; }
 
-	}
+
+		public State State { get; set; }
+
+
+		public int ClubId { get; set; }
+        [Display(Name = "Select a Club")]
+        [ForeignKey("ClubId")]
+        public Club Club { get; set; }
+
+    }
 }
