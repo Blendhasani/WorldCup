@@ -16,6 +16,8 @@ namespace WorldCup.Data
         public DbSet<Player> Players { get; set; }
         public DbSet<Stadium> Stadiums { get; set;}
         public DbSet<Club> Clubs { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set;}
 
 	}
 }
