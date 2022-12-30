@@ -12,6 +12,46 @@ namespace WorldCup.Data.Cart
             _context= context;  
         }
 
+        public void AddItemToCart(Product product)
+        {
+
+            var shoppingCartItem = _context.ShoppingCartItems.FirstOrDefault(n=>n.Product.Id == product.Id && n.ShoppingCartId==ShoppingCartId);
+            if (shoppingCartItem == null)
+            {
+                shoppingCartItem = new ShoppingCartItem()
+                {
+                    ShoppingCartId = ShoppingCartId,
+                    Product = product,
+                    Amount = 1,
+                };
+
+                _context.ShoppingCartItems.Add(shoppingCartItem);
+            }
+            else
+            {
+                shoppingCartItem.Amount++;
+            }
+            _context.SaveChanges();
+        }
+
+        public void RemoveItemFromCart(Product product)
+        {
+            var shoppingCartItem = _context.ShoppingCartItems.FirstOrDefault(n => n.Product.Id == product.Id && n.ShoppingCartId == ShoppingCartId);
+            if (shoppingCartItem != null)
+            {
+                if (shoppingCartItem.Amount > 1)
+                {
+                    shoppingCartItem.Amount--;
+                }
+
+                else
+                {
+                    _context.ShoppingCartItems.Remove(shoppingCartItem);
+                }
+            }
+            
+            _context.SaveChanges();
+        }
         public string ShoppingCartId { get; set; }
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }   
 
