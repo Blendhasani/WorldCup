@@ -3,7 +3,9 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WorldCup.Areas.Admin.Data.Services;
 using WorldCup.Data;
+using WorldCup.Data.Cart;
 using WorldCup.Data.Services;
+using WorldCup.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,9 @@ builder.Services.AddScoped<IProductsService, ProductsService>();
 builder.Services.AddScoped<IPlayersService, PlayersService>();
 builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 builder.Services.AddScoped<IClubsService, ClubsService>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
+builder.Services.AddSession();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +37,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
 
 app.UseAuthorization();
 

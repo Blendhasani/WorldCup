@@ -1,11 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using System.ServiceModel.Channels;
 using WorldCup.Models;
+using ISession = Microsoft.AspNetCore.Http.ISession;
 
 namespace WorldCup.Data.Cart
 {
     public class ShoppingCart
     {
         private readonly AppDbContext _context;
+        private static object cartld;
 
         public ShoppingCart(AppDbContext context)
         {
@@ -33,6 +38,18 @@ namespace WorldCup.Data.Cart
             }
             _context.SaveChanges();
         }
+        public static ShoppingCart GetShoppingCart(IServiceProvider services)
+
+        {
+            ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
+            var context = services.GetService<AppDbContext>();
+            string cartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
+            session.SetString("CartId", cartId);
+            return new ShoppingCart(context) { ShoppingCartId = cartId };
+
+        }
+
+      
 
         public void RemoveItemFromCart(Product product)
         {
@@ -53,7 +70,8 @@ namespace WorldCup.Data.Cart
             _context.SaveChanges();
         }
         public string ShoppingCartId { get; set; }
-        public List<ShoppingCartItem> ShoppingCartItems { get; set; }   
+        public List<ShoppingCartItem> ShoppingCartItems { get; set; }
+        public object ShoppingCartld { get; private set; }
 
         //method to get all shopping card items
         public List<ShoppingCartItem> GetShoppingCartItems()
