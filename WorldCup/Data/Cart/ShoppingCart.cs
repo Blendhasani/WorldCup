@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System.ServiceModel.Channels;
+//using System.ServiceModel.Channels;
 using WorldCup.Models;
 using ISession = Microsoft.AspNetCore.Http.ISession;
 
