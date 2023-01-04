@@ -1,12 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WorldCup.Areas.Admin.Models;
 using WorldCup.Models;
 
 namespace WorldCup.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
 
         public DbSet<Highlights> Highlights { get; set; }
         public DbSet<News> News { get; set; }

@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WorldCup.Areas.Admin.Data.Services;
@@ -20,6 +22,14 @@ builder.Services.AddScoped<IProductsService, ProductsService>();
 builder.Services.AddScoped<IPlayersService, PlayersService>();
 builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 builder.Services.AddScoped<IClubsService, ClubsService>();
+builder.Services.AddScoped<IOrdersService, OrdersService>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+});
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 builder.Services.AddSession();
@@ -38,7 +48,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseSession();
-
+//Authentication & Authorization
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -60,4 +72,5 @@ app.UseEndpoints(endpoints =>
 
 
 AppDbInitializer.Seed(app);
+AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
 app.Run();

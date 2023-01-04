@@ -73,14 +73,28 @@
                                  
                             </ul>
                            </li>
-
+                       
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButton"
+                                    data-mdb-toggle="dropdown"
+                                    aria-expanded="false">
+                                Hello User
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Orders" asp-action="Index"><i class="bi bi-list"></i>Orders</a>
+                                </li>
+                            </ul>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="admin" asp-controller="Clubs" asp-action="Index">Admin Area</a>
                         </li>
                         <div class="d-flex justify-content-end align-items-center">
-                            <button type="button" class="bg-dark text-light btn px-3 ms-2 me-2">
-                                Login
-                            </button>
+                          
+                                <a type="button" class="bg-dark text-light btn px-3 ms-2 me-2" asp-action="Login" asp-controller="Account">Login</a>
+                           
                             <button type="button" class=" btn btn-secondary me-3">
                                 Sign up for free
                             </button>
