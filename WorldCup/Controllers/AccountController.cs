@@ -69,9 +69,15 @@ namespace WorldCup.Controllers
 
             if(newUserResponse.Succeeded)
                 await _userManager.AddToRoleAsync(newUser, UserRoles.User);
-            return View("RegisterCompleted");
-            
+            return View("RegisterCompleted");           
 		}
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index","Home");
+        }
 
 
 	}
