@@ -2,8 +2,9 @@
 @model ShoppingCartVM
 
 @{
-    ViewData["Title"] = "Shopping Cart Summary";
+    ViewData["Title"] = "Shopping cart summary";
 }
+
 
 <div class="row">
     <div class="col-md-8 offset-2">
@@ -14,10 +15,10 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Amount</th>
+                    <th>Selected amount</th>
                     <th>Product</th>
                     <th>Price</th>
-                    <th>SubTotal</th>
+                    <th>Subtotal</th>
                     <th></th>
                 </tr>
             </thead>
@@ -53,14 +54,17 @@
                 </tr>
             </tfoot>
         </table>
-
-        <div class="text-center">
+        <div class="text-right">
             <div class="btn-group">
+
                 @*       <a class="btn btn-outline-primary"  asp-action="CompleteOrder">
                 Complete Order
                 </a>*@
-                <div id="paypal-btn"></div>
+
+                <div id="paypal-btn">
+                </div>
                 <span style="padding:5px"></span>
+
                 <a class="btn btn-outline-success" asp-controller="Products" asp-action="Index">
                     Add more items
                 </a>
@@ -68,16 +72,25 @@
         </div>
     </div>
 </div>
-@section Scripts {
-    <script src="https://www.paypalobjects.com/api/checkout.js">
-    </script>
+
+
+@section Scripts{
+
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+
     <script>
-        let _total = @Html.Raw(Model.ShoppingCartTotal);
+
+        let _total = @Html.Raw(@Model.ShoppingCartTotal);
+
         paypal.Button.render({
+            //Configure environment
             env: 'sandbox',
             client: {
-                sandbox: 'AQGWGSSl2W5DIoIZZtgKMPOg21-oky5YUNj_9NJw5l3MBtGJSGxm84eQLYVnL5s3NzASY1k-6p0-K9PG'
+                sandbox: 'AdsSr93BME3b-_qJe2T1a5c-487V-dM2BdIVtBQAGPOfytJf-iXDj2zN3P6cRFL9c-LJvVXZ3_ss9nco'
             },
+
+            //Costumize button
             locale: 'en_US',
             style: {
                 size: 'small',
@@ -85,24 +98,28 @@
                 shape: 'pill'
             },
             commit: true,
-            //setup payment
+
+            //Set up payment
             payment: function (data, actions) {
                 return actions.payment.create({
-                    transactions: [{
-                        amount: {
-                            total: _total,
-                            currency: 'USD'
+                    transactions: [
+                        {
+                            amount: {
+                                total: _total,
+                                currency: 'USD'
+                            }
                         }
-                    }]
+                    ]
                 });
             },
-            //execute the payment
+            //Execute the payment
             onAuthorize: function (data, actions) {
-                return actions.payment.execute().then(function(){
-                var url = '@Url.Action("CompleteOrder","Orders",new{ })';
-                window.location.href = url;
-                });
+                return actions.payment.execute().then(function () {
+                    var url = '@Url.Action("CompleteOrder","Orders",new { })'
+                    window.location.href = url;
+                    console.log("success");
+                })
             }
-        }, '#paypal-btn')
+        }, '#paypal-btn');
     </script>
 }
