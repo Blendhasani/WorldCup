@@ -1,15 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using NuGet.DependencyResolver;
+using System.Data;
 using WorldCup.Data.Services;
+using WorldCup.Data.Static;
 using WorldCup.Models;
 
 namespace WorldCup.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class AuthorsController : Controller
     {
         private readonly IAuthorsService _authorsService;
-        public AuthorsController(IAuthorsService authorsService)
+        public IAccountService _register;
+        private readonly UserManager<ApplicationUser> _userManager;
+        public AuthorsController(IAuthorsService authorsService ,IAccountService register, UserManager<ApplicationUser> userManager)
         {
             _authorsService = authorsService;
+            _register = register;
+            _userManager = userManager;
         }
         public async Task<IActionResult> Index(int? page)
         {
@@ -25,7 +35,7 @@ namespace WorldCup.Controllers
 		//Get :authors/Create
 
 		[HttpPost]
-		public async Task<IActionResult> Create([Bind("Name,Surname")] Author authors)
+		public async Task<IActionResult> Create([Bind("Name,Surname,Email,Password")] Author authors)
 		{
 
 			if (!ModelState.IsValid)
@@ -36,9 +46,12 @@ namespace WorldCup.Controllers
 			{
 				Name = authors.Name,
 				Surname = authors.Surname,
-	
+				Email= authors.Email,
+				Password = authors.Password,
 			};
-			await _authorsService.AddAsync(newauthors);
+
+            await _register.RegisterAuthor(newauthors);
+            await _authorsService.AddAsync(newauthors);
 			return RedirectToAction(nameof(Index));
 		}
 

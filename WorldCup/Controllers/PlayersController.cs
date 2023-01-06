@@ -1,12 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 using WorldCup.Data;
 using WorldCup.Data.Services;
+using WorldCup.Data.Static;
 using WorldCup.Models;
 
 namespace WorldCup.Controllers
 {
-	public class PlayersController : Controller
+    [Authorize(Roles = UserRoles.Admin)]
+
+    public class PlayersController : Controller
 	{
 		private readonly IPlayersService _service;
 
@@ -14,8 +19,8 @@ namespace WorldCup.Controllers
 		{
 			_service = service;
 		}
-
-		public async Task<IActionResult> Index()
+        [AllowAnonymous]
+        public async Task<IActionResult> Index()
 		{
 			var data = await _service.GetAllAsync();
 			return View(data);
@@ -42,8 +47,9 @@ namespace WorldCup.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
-		//Get: Actors/Details/1
-		public async Task<IActionResult> Details(int id)
+        //Get: Actors/Details/1
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(int id)
 		{ 
 			var playerDetails = await _service.GetPlayerByIdAsync(id);
 

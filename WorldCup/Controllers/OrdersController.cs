@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using WorldCup.Data.Cart;
 using WorldCup.Data.Services;
@@ -6,6 +7,7 @@ using WorldCup.Data.ViewModels;
 
 namespace WorldCup.Controllers
 {
+	[Authorize]
 	public class OrdersController : Controller
 	{
 		private readonly IProductsService _productsService;

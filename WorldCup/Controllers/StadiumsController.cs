@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using WorldCup.Data.Services;
+using WorldCup.Data.Static;
 using WorldCup.Models;
 
 namespace WorldCup.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class StadiumsController : Controller
     {
         private readonly IStadiumsService _stadiumsService;
@@ -11,6 +15,7 @@ namespace WorldCup.Controllers
         { 
             _stadiumsService = stadiumsService;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index(int? page)
         {
             var allStadiums = await _stadiumsService.GetAllAsync(page);
@@ -33,7 +38,7 @@ namespace WorldCup.Controllers
             await _stadiumsService.AddAsync(stadium);
             return RedirectToAction(nameof(Index));
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var stadiumsDetails = await _stadiumsService.GetByIdAsync(id);

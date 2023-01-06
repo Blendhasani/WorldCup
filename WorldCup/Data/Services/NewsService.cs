@@ -20,6 +20,7 @@ namespace WorldCup.Data.Services
 				VideoUrl = news.VideoUrl,
 				CreatedDate = DateTime.Now,
 				AuthorId = news.AuthorId,
+				ViewCount= news.ViewCount,
 			};
 			await _context.News.AddAsync(newNews);
 			await _context.SaveChangesAsync();

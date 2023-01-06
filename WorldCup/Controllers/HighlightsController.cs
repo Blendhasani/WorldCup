@@ -1,16 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.Data;
 using WorldCup.Data.Services;
+using WorldCup.Data.Static;
 using WorldCup.Models;
 
 namespace WorldCup.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class HighlightsController : Controller
     {
         private readonly IHightlightsService _highlightsService;
         public HighlightsController(IHightlightsService highlightsService ) {
         _highlightsService= highlightsService;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index(int? page)
         {
             var data = await _highlightsService.GetAllAsync(page);
@@ -34,7 +39,7 @@ namespace WorldCup.Controllers
             await _highlightsService.AddAsync(Highlight);
             return RedirectToAction(nameof(Index));
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var highlightsDetails =await _highlightsService.GetByIdAsync(id);

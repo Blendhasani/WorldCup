@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using WorldCup.Data;
 using WorldCup.Data.Static;
 using WorldCup.Data.ViewModels;
@@ -20,7 +22,7 @@ namespace WorldCup.Controllers
             _signInManager = signInManager;
             _context = context;
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Users()
         {
             var users = await _context.Users.ToListAsync();

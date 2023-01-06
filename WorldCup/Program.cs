@@ -23,6 +23,8 @@ builder.Services.AddScoped<IPlayersService, PlayersService>();
 builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 builder.Services.AddScoped<IClubsService, ClubsService>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();

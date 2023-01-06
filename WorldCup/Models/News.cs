@@ -24,13 +24,16 @@ namespace WorldCup.Models
 
         public string? VideoUrl { get; set; }
 
-
+     
         public DateTime CreatedDate { get; set; }
         [Display(Name ="Select an Author")]
         public int AuthorId { get; set; }
         [ForeignKey("AuthorId")]
 
         public Author Author { get; set; }
-        
+
+       public int ViewCount { get; set; }
+
+
     }
 }
