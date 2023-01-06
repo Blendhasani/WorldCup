@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using PagedList.Core;
 using WorldCup.Data.Enums;
 using WorldCup.Data.Services;
-using WorldCup.Migrations;
+//using WorldCup.Migrations;
 using WorldCup.Models;
 using X.PagedList;
 

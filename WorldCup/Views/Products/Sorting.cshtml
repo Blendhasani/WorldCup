@@ -27,9 +27,12 @@
                 @Html.TextBox("SearchString")
             <input type="submit" class="btn btn-primary" value="Search" />
             </div>
-            <div class="ms-auto p-2">
-                <a asp-controller="Products" asp-action="Create" class="btn btn-success">Create</a>
-            </div>
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <div class="ms-auto p-2">
+                    <a asp-controller="Products" asp-action="Create" class="btn btn-success">Create</a>
+                </div>
+            }
         </div>
     }
 
@@ -46,7 +49,10 @@
                 </th>
                 <th>@Html.DisplayNameFor(model=>model.Description)</th>
                 <th> @Html.ActionLink("Price", "Sorting", new { sortOrder = ViewBag.PriceSortParam})</th>
-                <th>Changes</th>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <th>Changes</th>
+                }
             </tr>
         </thead>
         <tbody>
@@ -61,12 +67,15 @@
                     <td style="align-content:center">@item.Description</td>
                     <td style="align-content:center">@item.Price</td>
 
-                    <td style="align-content:center">
-                        <p class="card-text d-flex">
-                            <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
-                            <a class="text-dark float-right fs-3" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
-                        </p>
-                    </td>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <td style="align-content:center">
+                            <p class="card-text d-flex">
+                                <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
+                                <a class="text-dark float-right fs-3" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
+                            </p>
+                        </td>
+                    }
                 </tr>
             }
 

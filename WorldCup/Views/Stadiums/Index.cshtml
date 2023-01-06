@@ -3,9 +3,12 @@
 @model IEnumerable<Stadium>
 @{
 	ViewData["Title"] = "Stadiums";
-	<div class="text-end ">
-		<a asp-controller="Stadiums" asp-action="Create" class="btn btn-success">Create</a>
-	</div>
+	@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+	{
+		<div class="text-end ">
+			<a asp-controller="Stadiums" asp-action="Create" class="btn btn-success">Create</a>
+		</div>
+	}
 
 }
 <div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
@@ -15,12 +18,15 @@
 		<div class="col-md-4 col-xs-6 mb-3" style="margin-bottom:30px;">
 			@*<div class="card shadow mt-5  bg-white rounded" style="max-width: 650px; min-width:201px; min-height:350px;">*@
 			<div class="row g-0">
-				<div class="col-md-12">
-					<p class="card-text d-flex justify-content-end">
+				@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+				{
+					<div class="col-md-12">
+						<p class="card-text d-flex justify-content-end">
 						<a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
 						<a class="text-dark float-right fs-3" style="padding-left:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
 					</p>
-				</div>
+				    </div>
+				}
 				<div class="col-md-12 mx-auto">
 					<a asp-action="Details" asp-route-id="@item.Id">
 						<img src="@item.ImageURL" class="" style=" width: 100%;

@@ -46,9 +46,12 @@
                             <a class="btn btn-outline-primary float-right" asp-action="Index">
                                 Back
                             </a>
-                            <a class="btn btn-success text-white" asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id">
-                                <i class="bi bi-cart-plus"></i> Add to cart (@Model.Price&euro;)
-                            </a>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="btn btn-success text-white" asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id">
+                                    <i class="bi bi-cart-plus"></i> Add to cart (@Model.Price&euro;)
+                                </a>
+                            }
                         </p>
                     </div>
                 </div>

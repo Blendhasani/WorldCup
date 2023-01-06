@@ -81,27 +81,35 @@
 	@foreach (var item in Model)
 	{
 		<div class="card" style="width:40vh; margin:20px">
-			<div class="col-md-12">
-				<p class="card-text d-flex justify-content-end">
-					<a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
-					<a class="text-dark float-right fs-3" style="padding-left:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
-				</p>
-			</div>
+			@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+			{
+				<div class="col-md-12">
+					<p class="card-text d-flex justify-content-end">
+						<a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
+						<a class="text-dark float-right fs-3" style="padding-left:5px;" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
+					</p>
+				</div>
+			}
 			<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 				<img src="@item.ImgUrl" class="img-fluid" />
 				<a asp-action="Details" asp-route-id="@item.Id">
 					<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 				</a>
 			</div>
-			<div class="card-body">
-				<h5 class="card-title">@item.Name</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a class="btn btn-success text-white" asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id">
+			
+			
+				<div class="card-body">
+					<h5 class="card-title">@item.Name</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					@if (User.Identity.IsAuthenticated)
+					{
+						<a class="btn btn-success text-white" asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id">
 
-					<i class="bi bi-cart-plus"></i> Add to cart (@item.Price&euro;)
-				</a>
-
-			</div>
+						<i class="bi bi-cart-plus"></i> Add to cart (@item.Price&euro;)
+					</a>
+					}
+				</div>
+			
 
 		</div>
 
