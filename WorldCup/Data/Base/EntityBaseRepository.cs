@@ -33,7 +33,7 @@ namespace WorldCup.Data.Base
         public async Task<IEnumerable<T>> GetAllAsync(int? page)
         {
 			var pageNumber = page ?? 1;
-			int pageSize = 6;
+			int pageSize = 9;
 			var result = _context.Set<T>().ToPagedList(pageNumber, pageSize);
 			return result;
 		}

@@ -50,7 +50,7 @@ namespace WorldCup.Controllers
         [HttpPost]
 		public async Task<IActionResult> Create(News news)
 		{
-            int vr = v+1;
+          
             var user = await GetCurrentUserAsync();
             var namee = user.FullName;
             var authorr = _context.Authors.Where(s=>s.Name.Equals(namee)).FirstOrDefault();
@@ -71,7 +71,7 @@ namespace WorldCup.Controllers
                 SecondaryImageUrl = news.SecondaryImageUrl,
                 CreatedDate = DateTime.Now,
                 AuthorId = authorr.Id,
-                ViewCount = vr,
+                ViewCount = 0,
             };
         
             await _newsService.AddNewNewsAsync(n);
@@ -98,7 +98,7 @@ namespace WorldCup.Controllers
 				VideoUrl = newsDetails.VideoUrl,
 				CreatedDate = DateTime.Now,
 				AuthorId = authorr.Id,
-                ViewCount= v,
+                ViewCount= newsDetails.ViewCount,
 			};
          
 			var newsDropdownData = await _newsService.GetNewsDropdownValues();
@@ -132,7 +132,7 @@ namespace WorldCup.Controllers
                 VideoUrl = newsDetails.VideoUrl,
                 CreatedDate = DateTime.Now,
                 AuthorId = news.AuthorId,
-                ViewCount = v,
+                ViewCount = newsDetails.ViewCount,
             };
 
             await _newsService.UpdateAsync(id, response);
@@ -150,30 +150,32 @@ namespace WorldCup.Controllers
 		}
         [AllowAnonymous]
 
-        public async Task<IActionResult> Details(int id,News news)
+       
+		public async Task<IActionResult> Details(int id)
 		{
-            //var newsDetails = await _newsService.GetNewsByIdAsync(id);
-            var newsDetails = await _context.News.Include(s=>s.Author).FirstOrDefaultAsync();
-            if (newsDetails == null) return View("NotFound");
+            
 
-           
-/*   
-            var response = new News()
-            {
-                Id= news.Id,
-                Title = newsDetails.Title,
-                Description = newsDetails.Description,
-                ThumbnailUrl = newsDetails.ThumbnailUrl,
-                SecondaryImageUrl = newsDetails.SecondaryImageUrl,
-                VideoUrl = newsDetails.VideoUrl,
-                CreatedDate = DateTime.Now,
-                AuthorId = news.AuthorId,
-                ViewCount = news.ViewCount++,
-            };
-            await _newsService.UpdateAsync(id, response);*/
+         var newsDetails = await _newsService.GetNewsByIdAsync(id);
+            newsDetails.ViewCount += 1;
+
+			/*var newsU = new News()
+			{
+				Id = newsDetails.Id,
+				Title = newsDetails.Title,
+				Description = newsDetails.Description,
+				ThumbnailUrl = newsDetails.ThumbnailUrl,
+				SecondaryImageUrl = newsDetails.SecondaryImageUrl,
+				VideoUrl = newsDetails.VideoUrl,
+				CreatedDate = DateTime.Now,
+				AuthorId = newsDetails.AuthorId,
+				ViewCount = newsDetails.ViewCount++,
+			};*/
+			await _newsService.UpdateAsync(id,newsDetails);
+
             return View(newsDetails);
 		}
-        [Authorize(Roles = "Editor")]
+
+		[Authorize(Roles = "Editor")]
         [HttpPost, ActionName("Delete")]
 		public async Task<IActionResult> DeleteConfirmed(int id)
 		{

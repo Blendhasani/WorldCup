@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using WorldCup.Data.Base;
 using WorldCup.Data.ViewModels;
 using WorldCup.Models;
@@ -7,7 +9,9 @@ namespace WorldCup.Data.Services
 {
     public class NewsService : EntityBaseRepository<News>, INewsService
     {
-        public NewsService(AppDbContext context) : base(context) { }
+        public NewsService(AppDbContext context) : base(context) { 
+		
+		}
 
 		public async Task AddNewNewsAsync(News news)
 		{
@@ -43,6 +47,35 @@ namespace WorldCup.Data.Services
 				.FirstOrDefaultAsync(n => n.Id == id);
 
 			return newsDetails;
+		}
+
+		public async Task<News> DetailsN(int id)
+		{
+			var newsDetails = await _context.News
+				.Include(c => c.Author)
+				.FirstOrDefaultAsync(n => n.Id == id);
+
+			return newsDetails;
+		}
+		/*
+				public async Task UpdateNews(int id, News news)
+				{
+					EntityEntry entityEntry = _context.Entry<News>(news);
+					entityEntry.State = EntityState.Modified;
+					await _context.SaveChangesAsync();
+				}*/
+
+		[HttpPost]
+		public async Task UpdateNews(int id, News news)
+		{
+
+
+
+
+			EntityEntry entityEntry = _context.Entry<News>(news);
+			entityEntry.State = EntityState.Modified;
+			await _context.SaveChangesAsync();
+
 		}
 	}
          
