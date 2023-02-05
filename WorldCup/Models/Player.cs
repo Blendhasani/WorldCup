@@ -16,15 +16,15 @@ namespace WorldCup.Models
 		[Required(ErrorMessage = "Profile Picture is required")]
 		public string ProfilePictureURL { get; set; }
 		
-		[Display(Name = "Name")]
-		[Required(ErrorMessage = "Name is required")]
-		[StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 chars")]
+		[Display(Name = "First Name")]
+		[Required(ErrorMessage = "First Name is required")]
+		[StringLength(50, MinimumLength = 3, ErrorMessage = "First Name must be between 3 and 50 chars")]
 
 		public string FullName { get; set; }
 
-		[Display(Name = "Surname")]
-		[Required(ErrorMessage = "Surname is required")]
-		[StringLength(50, MinimumLength = 3, ErrorMessage = "Surname must be between 3 and 50 chars")]
+		[Display(Name = "Last Name")]
+		[Required(ErrorMessage = "Last Name is required")]
+		[StringLength(50, MinimumLength = 3, ErrorMessage = "Last Name must be between 3 and 50 chars")]
 
 		public string Surname { get; set; }
 		public DateTime Birthday { get; set; }
