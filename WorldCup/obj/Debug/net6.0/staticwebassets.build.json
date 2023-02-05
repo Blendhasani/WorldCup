@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7jFh7CWtEkuqeH8bGMR12qaU/gslL49ZeHPCWEO6LOU=",
+  "Hash": "CB4o8fPP71OLcwxbdQTLSCoNPIJ3zJtqRp2MsDkpVJY=",
   "Source": "WorldCup",
   "BasePath": "_content/WorldCup",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WorldCup\\wwwroot",
       "Source": "WorldCup",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\WorldCup.styles.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\WorldCup.styles.css",
       "SourceId": "WorldCup",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "WorldCup.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\WorldCup.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\bundle\\WorldCup.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css",
       "SourceId": "WorldCup",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "WorldCup.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WorldCup.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\css\\Graphik Arabic Medium.otf",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Graphik Arabic Medium.otf",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "css/Graphik Arabic Medium.otf",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Graphik Arabic Medium.otf"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Bold.ttf",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Bold.ttf",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "css/Qatar2022Arabic-Bold.ttf",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Qatar2022Arabic-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Heavy.ttf",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\Qatar2022Arabic-Heavy.ttf",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "css/Qatar2022Arabic-Heavy.ttf",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Qatar2022Arabic-Heavy.ttf"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\css\\site.css",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\favicon.ico",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\arg_mex.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\arg_mex.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/arg_mex.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arg_mex.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\f1.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\f1.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/f1.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\f2.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\f2.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/f2.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\jap_spa.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\jap_spa.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/jap_spa.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jap_spa.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\logo.png",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\net_usa.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\net_usa.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/net_usa.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\net_usa.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\ser_swi.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\ser_swi.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/ser_swi.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ser_swi.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\tun_fra.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\tun_fra.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/tun_fra.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\tun_fra.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\images\\wal_eng.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\images\\wal_eng.jpg",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "images/wal_eng.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\wal_eng.jpg"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\js\\site.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.dark.min.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.dark.min.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.dark.rtl.min.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.dark.rtl.min.css.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.dark.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.min.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.min.css.map",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.rtl.min.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/css/mdb.rtl.min.css.map",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\mdb.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/img/mdb-favicon.ico",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\img\\mdb-favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/js/mdb.min.js",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/dist/js/mdb.min.js.map",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\mdb.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WorldCup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\wwwroot\\",
       "BasePath": "_content/WorldCup",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

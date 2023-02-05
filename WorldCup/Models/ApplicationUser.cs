@@ -7,5 +7,6 @@ namespace WorldCup.Models
     {
         [Display(Name ="Full Name")]
         public string FullName { get; set; }
+        
     }
 }

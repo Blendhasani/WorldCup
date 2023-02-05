@@ -6,6 +6,7 @@ using System.Data;
 using WorldCup.Data.Enums;
 using WorldCup.Data.Services;
 using WorldCup.Data.Static;
+using WorldCup.Data.ViewModels;
 //using WorldCup.Migrations;
 using WorldCup.Models;
 using X.PagedList;
@@ -76,15 +77,14 @@ namespace WorldCup.Controllers
 		//Get :products/Create
 
 		[HttpPost]
-		public async Task<IActionResult> Create(Product products)
+		public async Task<IActionResult> Create(ProductViewModel viewModel)
 		{
-
 			if (!ModelState.IsValid)
 			{
-				return View(products);
+				return View(viewModel);
 			}
 
-			await _productsService.AddAsync(products);
+			await _productsService.AddAsync(viewModel.Product);
 			return RedirectToAction(nameof(Index));
 		}
 

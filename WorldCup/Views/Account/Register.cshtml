@@ -47,6 +47,10 @@
 						<input asp-for="EmailAddress" type="email" id="form3Example3" class="form-control form-control-lg"
 							   placeholder="Enter your email address" />
 						<span asp-validation-for="EmailAddress" class="text-danger"></span>
+						@if (TempData["Error"] != null)
+						{
+							<div class="alert alert-danger">@TempData["Error"]</div>
+						}
 					</div>
 
 					<!-- Password input -->

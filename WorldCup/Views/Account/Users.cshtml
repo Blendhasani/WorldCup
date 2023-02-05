@@ -31,6 +31,12 @@
                         <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.Email)
                         </td>
+                        <td class="align-middle">
+                            @foreach (var role in item.Roles)
+                            {
+                                <span class="badge badge-primary">@role.RoleName</span>
+                            }
+                        </td>
                     </tr>
                 }
             </tbody>
