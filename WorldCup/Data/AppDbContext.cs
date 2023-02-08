@@ -25,5 +25,6 @@ namespace WorldCup.Data
 
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
+        
     }
 }

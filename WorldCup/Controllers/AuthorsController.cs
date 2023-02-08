@@ -49,10 +49,10 @@ namespace WorldCup.Controllers
 				Email= authors.Email,
 				Password = authors.Password,
 			};
-
             await _register.RegisterAuthor(newauthors);
             await _authorsService.AddAsync(newauthors);
-			return RedirectToAction(nameof(Index));
+
+            return RedirectToAction(nameof(Index));
 		}
 
         // Edit

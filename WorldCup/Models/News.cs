@@ -9,7 +9,7 @@ namespace WorldCup.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(500)]
         [RegularExpression(@"^[A-Z].*", ErrorMessage ="The title cannot be empty and you should start with capital letter")]
         public string Title { get; set; }
         [Required(ErrorMessage ="Description cannot be empty or more than 5000 characters")]
