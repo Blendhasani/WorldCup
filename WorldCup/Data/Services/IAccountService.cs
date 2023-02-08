@@ -1,5 +1,5 @@
 ﻿using NuGet.DependencyResolver;
-using WorldCup.Models;
+using WorldCup.Areas.Admin.Models;
 
 namespace WorldCup.Data.Services
 {

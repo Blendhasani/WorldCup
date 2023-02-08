@@ -1,0 +1,51 @@
+﻿@using WorldCup.Data.ViewModels;
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model OrderStatisticsViewModel
+
+
+
+
+
+<style>
+    .card-center {
+        display: flex;
+        justify-content: center;
+       margin:15px;
+    }
+</style>
+<div class="d-flex justify-content-center">
+    <div class="card-center">
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+
+        <div class="card-body">
+            <h4 class="card-title">Totali i shtijeve</h4>
+            <p class="card-text">The total number of sold products</p>
+            <h1> @Model.Sasia </h1>
+        </div>
+    </div>
+</div>
+<div class="card-center">
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+    
+        <div class="card-body">
+            <h4 class="card-title">Total Profit</h4>
+            <p class="card-text">The total profit of all the orders</p>
+            <h1>
+                @Model.Total Euro
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="card-center">
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+
+        <div class="card-body">
+            <h4 class="card-title">Total Highlight Views</h4>
+            <p class="card-text">The total profit of all the orders</p>
+            <h1> @Model.Views Views </h1>
+        </div>
+    </div>
+</div>
+</div>

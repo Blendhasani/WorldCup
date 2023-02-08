@@ -1,4 +1,4 @@
-﻿using WorldCup.Models;
+﻿using WorldCup.Areas.Admin.Models;
 
 namespace WorldCup.Data.ViewModels
 {

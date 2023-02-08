@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Policy;
 using WorldCup.Areas.Admin.Data.Services;
 using WorldCup.Data;
 using WorldCup.Data.Cart;
+using WorldCup.Data.Helpers;
 using WorldCup.Data.Services;
 using WorldCup.Models;
 
@@ -24,7 +26,8 @@ builder.Services.AddScoped<IStadiumsService, StadiumsService>();
 builder.Services.AddScoped<IClubsService, ClubsService>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
-
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
@@ -54,22 +57,13 @@ app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseAuthorization();
-
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "area",
+    name: "MyArea",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-      name: "MyArea",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );    
-});
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 AppDbInitializer.Seed(app);
