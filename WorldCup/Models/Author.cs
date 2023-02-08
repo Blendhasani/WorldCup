@@ -5,7 +5,7 @@ namespace WorldCup.Models
 {
 	public class Author : IEntityBase
 	{
-		[Key]
+        [Key]
 		public int Id { get; set; }
 		[Required(ErrorMessage = "Name is required")]
         [Display(Name="Name")]

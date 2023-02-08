@@ -23,9 +23,9 @@ namespace WorldCup.Data.Enums
 		Croatia,
 		[Description("Denmark")]
 		Denmark,
-		[Description("Ecuadpr")]
+		[Description("Ecuador")]
 		Ecuador,
-		[Description("Engaland")]
+		[Description("England")]
 		England,
 		[Description("France")]
 		France,
