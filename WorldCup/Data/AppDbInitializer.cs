@@ -16,7 +16,7 @@ namespace WorldCup.Data
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
                 context.Database.EnsureCreated();
-               
+
                 //Highlights
                 if (!context.Highlights.Any())
                 {
@@ -130,7 +130,7 @@ namespace WorldCup.Data
                             ProductType = Enums.ProductType.Headwear,
                             State = Enums.State.France
                         },
-                        new Product() 
+                        new Product()
                         {
                             Name = "NIKE ENGLAND CAP 22/23 - RED",
                             Description = "Cheer the Three Lions.\r\n\r\nSewn on badge.\r\n\r\nAdjustable.",
@@ -139,7 +139,7 @@ namespace WorldCup.Data
                             ProductType = Enums.ProductType.Headwear,
                             State = Enums.State.England
                         },
-                    }) ;
+                    });
                     context.SaveChanges();
                 }
 

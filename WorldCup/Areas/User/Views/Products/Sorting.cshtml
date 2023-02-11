@@ -1,0 +1,85 @@
+﻿@using X.PagedList.Mvc.Core; <!--import to get HTML Helper-->
+@using X.PagedList;
+@model IEnumerable<Product>
+<style>
+    #SearchString{
+        border-radius: 10px !important;
+        font-size: 18px !important;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+        padding:1px 6px !important;
+        border-width:2px!important;
+
+    
+    }
+</style>
+@{
+    ViewData["Title"] = "Products";
+  
+}
+<div style="margin:25px">
+
+   
+
+    @using (Html.BeginForm())
+    {
+        <div class="d-flex mb-3 " style="margin:20px 20px !important;">
+            <div class="p-2">
+                @Html.TextBox("SearchString")
+            <input type="submit" class="btn btn-primary" value="Search" />
+            </div>
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <div class="ms-auto p-2">
+                    <a asp-controller="Products" asp-action="Create" class="btn btn-success">Create</a>
+                </div>
+            }
+        </div>
+    }
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>@Html.DisplayNameFor(model=>model.Id)</th>
+                <th>@Html.ActionLink("Name", "Sorting", new { sortOrder = ViewBag.NameSortParm })</th>
+                <th>
+                    @Html.ActionLink("ProductType", "Sorting", new { sortOrder = ViewBag.ProductTypeSortParam})
+                </th>
+                <th>@Html.DisplayNameFor(model=>model.Description)</th>
+                <th> @Html.ActionLink("Price", "Sorting", new { sortOrder = ViewBag.PriceSortParam})</th>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <th>Changes</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="align-content:center">@item.Id</td>
+                    <td style="align-content:center">@item.Name</td>
+                    <td style="align-content:center">@item.ProductType</td>
+                    <td style="align-content:center">@item.Description</td>
+                    <td style="align-content:center">@item.Price</td>
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <td style="align-content:center">
+                            <p class="card-text d-flex">
+                                <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
+                                <a class="text-dark float-right fs-3" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
+                            </p>
+                        </td>
+                    }
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>

@@ -155,6 +155,34 @@ namespace WorldCup.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("WorldCup.Areas.Admin.Models.Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+                });
+
             modelBuilder.Entity("WorldCup.Areas.Admin.Models.Club", b =>
                 {
                     b.Property<int>("Id")
@@ -186,6 +214,48 @@ namespace WorldCup.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Clubs");
+                });
+
+            modelBuilder.Entity("WorldCup.Areas.Admin.Models.Player", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Bio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Birthday")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ClubId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ProfilePictureURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("State")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClubId");
+
+                    b.ToTable("Players");
                 });
 
             modelBuilder.Entity("WorldCup.Models.ApplicationUser", b =>
@@ -256,34 +326,6 @@ namespace WorldCup.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("WorldCup.Models.Author", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Authors");
-                });
-
             modelBuilder.Entity("WorldCup.Models.Highlights", b =>
                 {
                     b.Property<int>("Id")
@@ -291,6 +333,9 @@ namespace WorldCup.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -332,8 +377,8 @@ namespace WorldCup.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(5000)
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
 
                     b.Property<string>("SecondaryImageUrl")
                         .HasColumnType("nvarchar(max)");
@@ -344,8 +389,8 @@ namespace WorldCup.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("VideoUrl")
                         .HasColumnType("nvarchar(max)");
@@ -368,8 +413,14 @@ namespace WorldCup.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ShipmentDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -408,48 +459,6 @@ namespace WorldCup.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderItems");
-                });
-
-            modelBuilder.Entity("WorldCup.Models.Player", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Bio")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Birthday")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ClubId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("ProfilePictureURL")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("State")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClubId");
-
-                    b.ToTable("Players");
                 });
 
             modelBuilder.Entity("WorldCup.Models.Product", b =>
@@ -587,9 +596,20 @@ namespace WorldCup.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("WorldCup.Areas.Admin.Models.Player", b =>
+                {
+                    b.HasOne("WorldCup.Areas.Admin.Models.Club", "Club")
+                        .WithMany("Players")
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Club");
+                });
+
             modelBuilder.Entity("WorldCup.Models.News", b =>
                 {
-                    b.HasOne("WorldCup.Models.Author", "Author")
+                    b.HasOne("WorldCup.Areas.Admin.Models.Author", "Author")
                         .WithMany("News")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -626,17 +646,6 @@ namespace WorldCup.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("WorldCup.Models.Player", b =>
-                {
-                    b.HasOne("WorldCup.Areas.Admin.Models.Club", "Club")
-                        .WithMany("Players")
-                        .HasForeignKey("ClubId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Club");
-                });
-
             modelBuilder.Entity("WorldCup.Models.ShoppingCartItem", b =>
                 {
                     b.HasOne("WorldCup.Models.Product", "Product")
@@ -646,14 +655,14 @@ namespace WorldCup.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("WorldCup.Areas.Admin.Models.Author", b =>
+                {
+                    b.Navigation("News");
+                });
+
             modelBuilder.Entity("WorldCup.Areas.Admin.Models.Club", b =>
                 {
                     b.Navigation("Players");
-                });
-
-            modelBuilder.Entity("WorldCup.Models.Author", b =>
-                {
-                    b.Navigation("News");
                 });
 
             modelBuilder.Entity("WorldCup.Models.Order", b =>

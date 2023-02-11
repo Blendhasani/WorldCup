@@ -1,5 +1,5 @@
-﻿using WorldCup.Data.Base;
-using WorldCup.Models;
+﻿using WorldCup.Areas.Admin.Models;
+using WorldCup.Data.Base;
 
 namespace WorldCup.Data.Services
 {
