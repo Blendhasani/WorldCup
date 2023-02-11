@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 using WorldCup.Data.Base;
+using WorldCup.Models;
 
 namespace WorldCup.Areas.Admin.Models
 {
-    public class Club :IEntityBase
+	public class Club :IEntityBase
 	{
 		[Key]
 		public int Id { get; set; }
@@ -26,7 +27,6 @@ namespace WorldCup.Areas.Admin.Models
 		[Required(ErrorMessage = "City is required")]
 		[Display(Name = "City")]
 		public string City { get; set; }
-
 
         public List<Player> Players { get; set; }
 

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.DependencyResolver;
-using WorldCup.Areas.Admin.Models;
 using WorldCup.Data.Static;
 using WorldCup.Models;
 

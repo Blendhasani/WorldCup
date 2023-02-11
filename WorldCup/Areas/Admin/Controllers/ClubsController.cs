@@ -1,30 +1,22 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using WorldCup.Areas.Admin.Data.Services;
 using WorldCup.Areas.Admin.Models;
 using WorldCup.Data;
-using WorldCup.Data.Services;
-using WorldCup.Data.Static;
-using WorldCup.Data.ViewModels;
 using WorldCup.Models;
 
 namespace WorldCup.Areas.Admin.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
-    [Area("Admin")]
+	[Area("Admin")]
 	public class ClubsController : Controller
 	{
 		private readonly IClubsService _clubsService;
 		private readonly AppDbContext _context;
-		private readonly IPhotoService _photoService;
-
-		public ClubsController(IClubsService clubsService,AppDbContext context, IPhotoService photoService)
+        public ClubsController(IClubsService clubsService,AppDbContext context)
 		{
 			_clubsService= clubsService;
             _context= context;
-            _photoService= photoService;    
 		}
-        [Route("Admin/Clubs/Index")]
+        [Route("Clubs/Index")]
         public async Task<IActionResult> Index()
         {
             var data = await _clubsService.GetAllAsync();
@@ -32,41 +24,26 @@ namespace WorldCup.Areas.Admin.Controllers
         }
 
    
-        [Route("Admin/Clubs/Create")]
+        [Route("Clubs/Create")]
         public IActionResult Create()
 		{
 			return View();
 		}
      
-
-        [Route("Admin/Clubs/Create/{id?}")]
+        [Route("Clubs/Create")]
+        [Route("Clubs/Create/{id?}")]
         [HttpPost]
-		public async Task<IActionResult> Create(ClubVM clubs)
+		public async Task<IActionResult> Create([Bind("Name,Birthday,LogoUrl,State,City")] Club clubs)
 		{
-            if (ModelState.IsValid)
-            {
-                var result = await _photoService.AddPhotoAsync(clubs.LogoUrl);
-                var club = new Club
-                {
-                    Name = clubs.Name,
-                    Birthday = clubs.Birthday,
-                    LogoUrl = result.Url.ToString(),
-                    State = clubs.State,
-                    City = clubs.City,
-                    Players = clubs.Players
-                };
-                await _clubsService.AddAsync(club);
-                return RedirectToAction(nameof(Index));
-            }
-            else
-            {
-                ModelState.AddModelError("", "Photo upload failed");
-            }
-			return View(clubs);
+
+			if (!ModelState.IsValid)
+			{
+				return View(clubs);
+			}
+			
+			await _clubsService.AddAsync(clubs);
+			return RedirectToAction(nameof(Index));
 		}
-
-
-	
         [Route("Clubs/Details/{id?}")]
         public async Task<IActionResult> Details(int id)
         {
@@ -96,14 +73,14 @@ namespace WorldCup.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Route("Admin/Clubs/Delete/{id?}")]
+        [Route("Clubs/Delete/{id?}")]
         public async Task<IActionResult> Delete(int id)
         {
             var clubDetails = await _clubsService.GetByIdAsync(id);
             if (clubDetails == null) return View("NotFound");
             return View(clubDetails);
         }
-        [Route("Admin/Clubs/Delete/{id?}")]
+        [Route("Clubs/Delete/{id?}")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -114,7 +91,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Route("Admin/Clubs/Sorting/{sorder?}/{search?}")]
+        [Route("Clubs/Sorting/{sorder?}/{search?}")]
         public async Task<IActionResult> Sorting(string sortOrder, string searchString)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "Name" : "";
@@ -140,7 +117,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(clubs.ToList());
         }
 
-        [Route("Admin/Clubs/CheckUsernameAvailability/{userdata?}")]
+        [Route("Clubs/CheckUsernameAvailability/{userdata?}")]
         public JsonResult CheckUsernameAvailability(string userdata)
         {
             System.Threading.Thread.Sleep(200);

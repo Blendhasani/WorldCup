@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WorldCup.Areas.Admin.Models;
 using WorldCup.Data.ViewModels;
+using WorldCup.Models;
 
 namespace WorldCup.Data.Services
 {
-    public class PlayersService : IPlayersService
+	public class PlayersService : IPlayersService
 	{
 		private readonly AppDbContext _context;
 		public PlayersService(AppDbContext context)

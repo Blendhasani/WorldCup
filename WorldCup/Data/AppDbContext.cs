@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WorldCup.Areas.Admin.Models;
-
 using WorldCup.Models;
 
 namespace WorldCup.Data
@@ -15,7 +14,7 @@ namespace WorldCup.Data
 
         public DbSet<Highlights> Highlights { get; set; }
         public DbSet<News> News { get; set; }
-	
+		public DbSet<Author> Authors { get; set; }
         public DbSet<Product> Products { get; set; }
 
         public DbSet<Player> Players { get; set; }
@@ -25,9 +24,7 @@ namespace WorldCup.Data
         public DbSet<OrderItem> OrderItems { get; set; }
 
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
-        public DbSet<Author> Authors { get; set; }
 
-
-
+        
     }
 }
