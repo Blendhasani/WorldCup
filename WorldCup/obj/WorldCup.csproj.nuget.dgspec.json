@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\WorldCup.csproj": {}
+    "C:\\Users\\albin\\Desktop\\worldcup\\WorldCup\\WorldCup\\WorldCup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\WorldCup.csproj": {
+    "C:\\Users\\albin\\Desktop\\worldcup\\WorldCup\\WorldCup\\WorldCup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "projectUniqueName": "C:\\Users\\albin\\Desktop\\worldcup\\WorldCup\\WorldCup\\WorldCup.csproj",
         "projectName": "WorldCup",
-        "projectPath": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\WorldCup.csproj",
-        "packagesPath": "C:\\Users\\Benet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Benet\\Desktop\\backupVS\\WorldCup\\WorldCup\\obj\\",
+        "projectPath": "C:\\Users\\albin\\Desktop\\worldcup\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "packagesPath": "C:\\Users\\albin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\albin\\Desktop\\worldcup\\WorldCup\\WorldCup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Benet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\albin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.20.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -54,9 +62,17 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
             "PagedList.Core.Mvc": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "X.PagedList.Mvc.Core": {
               "target": "Package",
@@ -82,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,102 @@
+﻿
+@model IEnumerable<Highlights>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container" style="position: relative;">
+  <div id="carouselExampleInterval" class="carousel slide " data-mdb-ride="carousel">
+    <!-- carousel content here -->
+	
+<div class="row">
+	
+	<div id="upmarg" class="text-center " style="height:20px ; object-fit: cover;">
+    <div id="carouselExampleInterval" class="carousel slide " data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-mdb-interval="2000">
+               
+                <img style="height:700px ; object-fit: cover;" src="https://digitalhub.fifa.com/transform/5ff46696-91ce-4fa0-9338-c7647eb07abd/FIFAPLS_TheBest_Awards_Banner_02?io=transform:fill,height:768,width:1440&quality=100" class="d-block w-100" alt="Camera" />
+            </div>
+            <div class="carousel-item " data-mdb-interval="2000">
+              
+                <img style="height:700px ; object-fit: cover;" src="https://digitalhub.fifa.com/transform/34dd7fb5-4887-4015-b61d-bbbf6bdfa34a/Argentina-v-France-Final-FIFA-World-Cup-Qatar-2022"  class="d-block w-100" alt="Wild Landscape" />
+
+            </div
+        </div>
+      
+    </div>
+
+	
+  </div>
+
+  <div class="highlights" style="position: absolute; top: 90px; left: 20px; right: 20px;  ">
+	  <h1 class="texti">Top highlights</h1>
+	  <p class="texti" style="text-shadow: 1.5px 1.5px #000">Today's date: @DateTime.Now.ToString("dd/MM/yyyy")</p>
+   <div class="row">
+	@foreach (var item in Model.OrderByDescending(x => x.Count).Take(3))
+	{
+		<div class="col-md-4 col-xs-6 mb-3" style="margin-bottom:30px;">
+			<div class="row g-0">
+				<div class="col-md-12 mx-auto " style=" border-radius: 10px; background-color:white">
+					<a asp-area="user" asp-controller="Highlights" asp-action="Details" asp-route-id="@item.Id">
+						<img src="@item.ImgUrl" class="" style=" width: 100%;
+						object-fit:contain;" alt="@item.Title">
+					</a>
+				</div>
+				<div class="col-md-12 p-3 mb-3" style=" border-radius: 0 0 10px 10px;background-color:white">
+					<p class="card-text pt-2" style="font-family:Google Sans,arial,sans-serif; font-size:clamp(17px,3vw,20px); display:flex;flex-direction:row;justify-content:space-around;">
+						<b>@item.Title</b>
+					</p>
+					@if (User.IsInRole("Admin"))
+					{
+						<p class="card-text pt-2 text-center" style="font-family: Google Sans, Arial, sans-serif; font-size: 1.2rem;">
+							Checked:<span class="badge badge-primary">@item.Count</span>
+					</p>}
+				</div>
+			</div>
+		</div>
+	}
+	</div>
+  </div>
+</div>
+
+	
+	
+	
+	
+	
+</div>
+
+</div>
+
+
+   <style>
+     .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+    overflow-x: hidden;
+	   overflow-y: hidden;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 2188vmax;
+}
+.container-fluid{
+--mdb-gutter-x: 0rem;
+}
+.container {
+  
+    padding-right: 0px ; 
+    padding-left: 0px ;
+  
+    
+}
+
+    .pb-3{
+        margin-top: 72px !important ;
+    }
+	.texti{
+		weight:800;color: white;text-shadow: 3px 3px #000
+	}
+
+   </style>

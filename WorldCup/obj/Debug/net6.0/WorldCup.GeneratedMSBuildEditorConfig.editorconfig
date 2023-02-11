@@ -9,141 +9,245 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WorldCup
 build_property.RootNamespace = WorldCup
-build_property.ProjectDir = C:\Users\Benet\Desktop\backupVS\WorldCup\WorldCup\
+build_property.ProjectDir = C:\Users\albin\Desktop\worldcup\WorldCup\WorldCup\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Benet\Desktop\backupVS\WorldCup\WorldCup
+build_property.MSBuildProjectDirectory = C:\Users\albin\Desktop\worldcup\WorldCup\WorldCup
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Authors/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xDcmVhdGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Authors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Authors/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xEZWxldGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Authors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Authors/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xFZGl0LmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Authors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Authors/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xJbmRleC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Authors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Highlights/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xDcmVhdGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Clubs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2x1YnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Highlights/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xEZWxldGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Clubs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2x1YnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Highlights/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Clubs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2x1YnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Highlights/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xFZGl0LmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Clubs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2x1YnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Highlights/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlnaGxpZ2h0c1xJbmRleC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Clubs/Sorting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2x1YnNcU29ydGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Players/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Players/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/News/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xDcmVhdGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Players/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/News/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZWxldGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Players/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/News/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Players/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/News/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xFZGl0LmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/News/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Players/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xDcmVhdGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Statistics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Players/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZWxldGUuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Players/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Players/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xFZGl0LmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Players/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xJbmRleC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Account/RegisterCompleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XFJlZ2lzdGVyQ29tcGxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Account/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Highlights/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIaWdobGlnaHRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Highlights/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIaWdobGlnaHRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Highlights/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIaWdobGlnaHRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Filtered.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRmlsdGVyZWQuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Highlights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIaWdobGlnaHRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Highlights/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIaWdobGlnaHRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Shared/NotFound.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/News/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZXdzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/News/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZXdzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/News/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZXdzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benet/Desktop/backupVS/WorldCup/WorldCup/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-z4l0f183a0
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/News/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZXdzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZXdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xPcmRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Orders/OrderCompleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xPcmRlcnNcT3JkZXJDb21wbGV0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Orders/ShoppingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xPcmRlcnNcU2hvcHBpbmdDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Filtered.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xGaWx0ZXJlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Products/Sorting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9kdWN0c1xTb3J0aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/Components/ShoppingCartSummary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xTaG9wcGluZ0NhcnRTdW1tYXJ5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/_Identity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0lkZW50aXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shipment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGlwbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Stadiums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTdGFkaXVtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Stadiums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTdGFkaXVtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Stadiums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTdGFkaXVtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Stadiums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTdGFkaXVtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Stadiums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTdGFkaXVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9xenn4kyca
+
+[C:/Users/albin/Desktop/worldcup/WorldCup/WorldCup/Areas/User/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5y45wbdreg

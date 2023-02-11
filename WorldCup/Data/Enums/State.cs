@@ -21,14 +21,14 @@ namespace WorldCup.Data.Enums
 		Costa_Rica,
 		[Description("Croatia")]
 		Croatia,
-		[Description("Denmark")]
-		Denmark,
-		[Description("Ecuador")]
-		Ecuador,
-		[Description("England")]
-		England,
-		[Description("France")]
-		France,
+        [Description("Denmark")]
+        Denmark,
+        [Description("Ecuador")]
+        Ecuador,
+        [Description("England")]
+        England,
+        [Description("France")]
+        France,
 		[Description("Germany")]
 		Germany,
 		[Description("Ghana")]
