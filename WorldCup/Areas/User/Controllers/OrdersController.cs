@@ -73,56 +73,22 @@ namespace WorldCup.Controllers
 		}
 
 
-        //public async Task<IActionResult> CompleteOrder()
-        //{
-        //	var items = _shoppingCart.GetShoppingCartItems();
-        //	string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        //	string userEmailAddress = User.FindFirstValue(ClaimTypes.Email);
-        //	string userRole = User.FindFirstValue(ClaimTypes.Role);
-
-        //	await _ordersService.StoreOrderAsync(items, userId, userEmailAddress);
-        //	//qekjo posht e merr order nbaz te qasej user id) 
-        //	var orderi = _context.Orders.FirstOrDefault(x => x.UserId == userId);
-
-        //	await _context.SaveChangesAsync();
-        //	await _shoppingCart.ClearShoppingCartAsync();
-
-        //	return View("OrderCompleted");
-
-
-        //}
-        public DateTime CalculateShipmentDate(Order order)
+        public async Task<IActionResult> CompleteOrder()
         {
-            if (order.OrderItems.Any(i => i.Product.ProductType == ProductType.Jersey))
-            {
-                return order.CreatedAt.AddDays(7);
-            }
-            else
-            {
-                return order.CreatedAt.AddDays(10);
-            }
-        }
+            var items = _shoppingCart.GetShoppingCartItems();
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            string userEmailAddress = User.FindFirstValue(ClaimTypes.Email);
 
-        public async Task<Order> StoreOrderAsync(IEnumerable<ShoppingCartItem> items, string userId, string userEmailAddress)
-        {
-            var order = new Order
-            {
-                UserId = userId,
-                Email = userEmailAddress,
-                OrderItems = items.Select(i => new OrderItem
-                {
-                    ProductId = i.Product.Id,
-                    Amount = i.Amount
-                }).ToList()
-            };
+            await _ordersService.StoreOrderAsync(items, userId, userEmailAddress);
+            var order = _context.Orders.FirstOrDefault(x => x.UserId == userId);
+            order.ShipmentDate = DateTime.Now.AddDays(10);
 
-            order.ShipmentDate = CalculateShipmentDate(order);
-
-            _context.Orders.Add(order);
             await _context.SaveChangesAsync();
+            await _shoppingCart.ClearShoppingCartAsync();
 
-            return order;
+            return View("OrderCompleted");
         }
+
 
 
 

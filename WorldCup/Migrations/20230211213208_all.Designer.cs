@@ -12,7 +12,7 @@ using WorldCup.Data;
 namespace WorldCup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230211202634_all")]
+    [Migration("20230211213208_all")]
     partial class all
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -17,28 +17,28 @@ namespace WorldCup.Data.Cart
             _context= context;  
         }
 
-        public void AddItemToCart(Product product)
-        {
+		public void AddItemToCart(Product product)
+		{
+			var shoppingCartItem = _context.ShoppingCartItems.FirstOrDefault(n => n.Product.Id == product.Id && n.ShoppingCartId == ShoppingCartId);
+			if (shoppingCartItem == null)
+			{
+				shoppingCartItem = new ShoppingCartItem()
+				{
+					ShoppingCartId = ShoppingCartId,
+					Product = product,
+					Amount = 1,
+				};
 
-            var shoppingCartItem = _context.ShoppingCartItems.FirstOrDefault(n=>n.Product.Id == product.Id && n.ShoppingCartId==ShoppingCartId);
-            if (shoppingCartItem == null)
-            {
-                shoppingCartItem = new ShoppingCartItem()
-                {
-                    ShoppingCartId = ShoppingCartId,
-                    Product = product,
-                    Amount = 1,
-                };
+				_context.ShoppingCartItems.Add(shoppingCartItem);
+			}
+			else
+			{
+				_context.Update(shoppingCartItem).Property(n => n.Amount).CurrentValue++;
+			}
+			_context.SaveChanges();
+		}
 
-                _context.ShoppingCartItems.Add(shoppingCartItem);
-            }
-            else
-            {
-                shoppingCartItem.Amount++;
-            }
-            _context.SaveChanges();
-        }
-        public static ShoppingCart GetShoppingCart(IServiceProvider services)
+		public static ShoppingCart GetShoppingCart(IServiceProvider services)
 
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
@@ -83,13 +83,15 @@ namespace WorldCup.Data.Cart
         //get total of shopping card items price
         public double GetShoppingCartTotal()
         {
-            //take the prices of the products in the list of shoppingcart
-            // add them up/
-            //show the result
-
-            var total = _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Select(n => n.Product.Price * n.Amount).Sum();
-            return total;
-        }
+			//take the prices of the products in the list of shoppingcart
+			// add them up/
+			//show the result
+			var total = _context.ShoppingCartItems.AsEnumerable()
+				   .Where(n => n.ShoppingCartId == ShoppingCartId)
+				   .Select(n => n.Product.Price * n.Amount)
+				   .Sum();
+			return total;
+		}
 
 		public async Task ClearShoppingCartAsync()
 		{

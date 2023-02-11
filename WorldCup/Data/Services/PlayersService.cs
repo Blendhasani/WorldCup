@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WorldCup.Areas.Admin.Models;
 using WorldCup.Data.ViewModels;
-using WorldCup.Models;
 
 namespace WorldCup.Data.Services
 {

@@ -28,18 +28,19 @@
                     <tr>
                         <td class="align-middle">@item.Amount</td>
                         <td class="align-middle">@item.Product.Name</td>
-                        <td class="align-middle">@item.Product.Price.ToString("c")</td>
-                        <td class="align-middle">@((item.Amount * item.Product.Price).ToString("c"))</td>
-                        <td class="align-middle">
+                        <td class="align-middle">@item.Product.Price.ToString("f") Euro</td>
+                        <td class="align-middle">@((item.Amount * item.Product.Price).ToString("f"))Euro</td>
+                        <td class="align-middle d-flex">
                             <a class="text-danger" asp-controller="Orders" asp-action="RemoveItemFromShoppingCart"
-                           asp-route-id="@item.Product.Id">
+                           asp-route-id="@item.Product.Id" style="font-size: 22px; padding: 10px 15px;">
                                 <i class="bi bi-cart-dash"></i>
                             </a>
                             <a class="text-success" asp-controller="Orders" asp-action="AddItemToShoppingCart"
-                           asp-route-id="@item.Product.Id">
+                           asp-route-id="@item.Product.Id" style="font-size: 22px; padding: 10px 15px;">
                                 <i class="bi bi-cart-plus"></i>
                             </a>
                         </td>
+
                     </tr>
                 }
             </tbody>
@@ -48,27 +49,23 @@
                     <td colspan="2"></td>
                     <td><b>Total:</b></td>
                     <td>
-                        @Model.ShoppingCartTotal.ToString("c")
+                        @Model.ShoppingCartTotal.ToString("f") Euro
                     </td>
                     <td></td>
                 </tr>
             </tfoot>
         </table>
-        <div class="text-right">
-            <div class="btn-group">
-
-                @*       <a class="btn btn-outline-primary"  asp-action="CompleteOrder">
-                Complete Order
-                </a>*@
-
-                <div id="paypal-btn">
-                </div>
-                <span style="padding:5px"></span>
-
-                <a class="btn btn-outline-success" asp-controller="Products" asp-action="Index">
+        <div class="d-flex text-center">
+            <div class="add-more-items-container" style="margin-right: 30px;">
+                <a class="btn btn-success" asp-controller="Products" asp-action="Index">
                     Add more items
                 </a>
             </div>
+            <div class="btn-group">
+                <div id="paypal-btn"></div>
+               
+            </div>
+            
         </div>
     </div>
 </div>
@@ -123,3 +120,4 @@
         }, '#paypal-btn');
     </script>
 }
+\

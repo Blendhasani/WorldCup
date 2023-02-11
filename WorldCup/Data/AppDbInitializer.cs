@@ -519,52 +519,7 @@ namespace WorldCup.Data
                     await userManager.AddToRoleAsync(newAppTeacher, UserRoles.Editor);
                 }
 
-                /*
-                string appEditorEmail1 = "erand@fifa.com";
-                var appEditor1 = await userManager.FindByEmailAsync(appEditorEmail1);
-                if (appEditor1 == null)
-                {
-                    var newAppTeacher = new ApplicationUser()
-                    {
-                        FullName = "Erand Hoda",
-                        UserName = "erand-hoda",
-                        Email = appEditorEmail1,
-                        EmailConfirmed = true
-                    };
-                    await userManager.CreateAsync(newAppTeacher, "Erand.123");
-                    await userManager.AddToRoleAsync(newAppTeacher, UserRoles.Editor);
-                }
-
-
-                string appEditorEmail2 = "albin@fifa.com";
-                var appEditor2 = await userManager.FindByEmailAsync(appEditorEmail2);
-                if (appEditor2 == null)
-                {
-                    var newAppTeacher = new ApplicationUser()
-                    {
-                        FullName = "Albin Saraci",
-                        UserName = "albin-saraci",
-                        Email = appEditorEmail2,
-                        EmailConfirmed = true
-                    };
-                    await userManager.CreateAsync(newAppTeacher, "Albin.123");
-                    await userManager.AddToRoleAsync(newAppTeacher, UserRoles.Editor);
-                }
-
-                string appEditorEmail3 = "benet@fifa.com";
-                var appEditor3 = await userManager.FindByEmailAsync(appEditorEmail3);
-                if (appEditor3 == null)
-                {
-                    var newAppTeacher = new ApplicationUser()
-                    {
-                        FullName = "Benet Muhaxheri",
-                        UserName = "benet-muhaxheri",
-                        Email = appEditorEmail3,
-                        EmailConfirmed = true
-                    };
-                    await userManager.CreateAsync(newAppTeacher, "Benet.123");
-                    await userManager.AddToRoleAsync(newAppTeacher, UserRoles.Editor);
-                }*/
+              
             }
         }
     }
