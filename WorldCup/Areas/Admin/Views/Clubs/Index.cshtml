@@ -5,9 +5,13 @@
 @model IEnumerable<Club>
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
-    <div class="text-end ">
-        <a asp-controller="Clubs" asp-action="Create" class="btn btn-success">Create</a>
-    </div>
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="text-end ">
+            <a asp-controller="Clubs" asp-action="Create" class="btn btn-success">Create</a>
+        </div>
+    }
+
 
 }
 
@@ -25,7 +29,12 @@
                 <th>@Html.DisplayNameFor(model=>model.Birthday)</th>
                 <th>@Html.DisplayNameFor(model=>model.State)</th>
                 <th>@Html.DisplayNameFor(model=>model.City)</th>
-                <th>Changes</th>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <th>Changes</th>
+                }
+
             </tr>
         </thead>
         <tbody>
@@ -41,12 +50,16 @@
                     <td style="align-content:center">@item.Birthday</td>
                     <td style="align-content:center">@item.State</td>
                     <td style="align-content:center">@item.City</td>
-                    <td style="align-content:center">
-                        <p class="card-text d-flex">
-                            <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
-                            <a class="text-dark float-right fs-3"  asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
-                        </p>
-                    </td>
+                    @if (User.IsInRole("Admin"))
+                    {
+
+                        <td style="align-content:center">
+                            <p class="card-text d-flex">
+                                <a class="text-dark float-right fs-3 " style="padding-left:5px;" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square text-primary"></i></a>
+                                <a class="text-dark float-right fs-3"  asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash text-danger"></i></a>
+                            </p>
+                        </td>
+                    }
                 </tr>
                 }
 

@@ -7,6 +7,7 @@ using System.Data;
 using WorldCup.Data;
 using WorldCup.Data.Services;
 using WorldCup.Data.Static;
+using WorldCup.Data.ViewModels;
 using WorldCup.Models;
 
 namespace WorldCup.Controllers
@@ -18,14 +19,15 @@ namespace WorldCup.Controllers
 		private readonly INewsService _newsService;
 		private readonly UserManager<ApplicationUser> _userManager;
 		private readonly AppDbContext _context;
+		private readonly IPhotoService _photoService;
 		public static int v = 0;
 
-		public NewsController(INewsService newsService, UserManager<ApplicationUser> userManager, AppDbContext context)
+		public NewsController(INewsService newsService, UserManager<ApplicationUser> userManager, AppDbContext context, IPhotoService photoService)
 		{
 			_newsService = newsService;
 			_userManager = userManager;
 			_context = context;
-
+			_photoService = photoService;
 
 		}
 
@@ -49,38 +51,36 @@ namespace WorldCup.Controllers
 		//Get :News/Create
 		[Authorize(Roles = "Editor")]
 		[HttpPost]
-		public async Task<IActionResult> Create(News news)
+		public async Task<IActionResult> Create(NewsDTO newsDto)
 		{
-
-			var user = await GetCurrentUserAsync();
-			var namee = user.FullName;
-			var authorr = _context.Authors.Where(s => s.Name.Equals(namee)).FirstOrDefault();
 			if (!ModelState.IsValid)
 			{
 				var newsDropdownData = await _newsService.GetNewsDropdownValues();
 				ViewBag.Authors = new SelectList(newsDropdownData.Authors, "Id", "Name");
 
-				return View(news);
+				return View(newsDto);
 			}
-			var n = new News()
+			var result = await _photoService.AddPhotoAsync(newsDto.ThumbnailUrl);
+			var result2 = await _photoService.AddPhotoAsync(newsDto.SecondaryImageUrl);
+			var user = await GetCurrentUserAsync();
+			var namee = user.FullName;
+			var authorr = _context.Authors.Where(s => s.Name.Equals(namee)).FirstOrDefault();
+
+			var news = new News
 			{
-				Id = news.Id,
-				ThumbnailUrl = news.ThumbnailUrl,
-				Description = news.Description,
-				VideoUrl = news.VideoUrl,
-				Title = news.Title,
-				SecondaryImageUrl = news.SecondaryImageUrl,
-				CreatedDate = DateTime.Now,
+				Title = newsDto.Title,
+				Description = newsDto.Description,
+				ThumbnailUrl = result.Url.ToString(),
+				SecondaryImageUrl = result2.Url.ToString(),
+				VideoUrl = newsDto.VideoUrl,
+				CreatedDate = newsDto.CreatedDate,
 				AuthorId = authorr.Id,
-				ViewCount = 0,
+				ViewCount = newsDto.ViewCount
 			};
 
-			await _newsService.AddNewNewsAsync(n);
-
-
+			await _newsService.AddAsync(news);
 			return RedirectToAction(nameof(Index));
 		}
-
 		// Edit
 		[Authorize(Roles = "Editor")]
 		public async Task<IActionResult> Edit(int id)

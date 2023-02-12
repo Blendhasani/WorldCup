@@ -92,7 +92,7 @@ namespace WorldCup.Data
                             ImgUrl = "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=370&h=370&cmp=100&c=999&img=A1069686000&iset=0108&iindex=0007&retBlank=1x1&bg=f2f2f2",
                             Price = 99.99,
                             ProductType = Enums.ProductType.Jersey,
-                            State = Enums.State.England
+                            State = Enums.State.Costa_Rica
                         },
                         new Product()
                         {
@@ -110,7 +110,7 @@ namespace WorldCup.Data
                             ImgUrl = "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=1000&h=1000&cmp=100&c=999&img=A1070748000&iset=0108&iindex=0007",
                             Price = 139.99,
                             ProductType = Enums.ProductType.Jersey,
-                            State = Enums.State.France
+                            State = Enums.State.Brazil
                         },
                         new Product()
                         {
@@ -119,7 +119,7 @@ namespace WorldCup.Data
                             ImgUrl = "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=1000&h=1000&cmp=100&c=999&img=A1074698000&iset=0108&iindex=0155",
                             Price = 19.99,
                             ProductType = Enums.ProductType.Headwear,
-                            State = Enums.State.England
+                            State = Enums.State.Costa_Rica
                         },
                         new Product()
                         {
@@ -128,7 +128,7 @@ namespace WorldCup.Data
                             ImgUrl = "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=1000&h=1000&cmp=100&c=999&img=A1071865000&iset=0108&iindex=0155",
                             Price = 19.99,
                             ProductType = Enums.ProductType.Headwear,
-                            State = Enums.State.France
+                            State = Enums.State.Brazil
                         },
                         new Product()
                         {
@@ -137,7 +137,7 @@ namespace WorldCup.Data
                             ImgUrl = "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=1000&h=1000&cmp=100&c=999&img=A1074700000&iset=0108&iindex=0155",
                             Price = 15.99,
                             ProductType = Enums.ProductType.Headwear,
-                            State = Enums.State.England
+                            State = Enums.State.Costa_Rica
                         },
                     });
                     context.SaveChanges();
@@ -211,7 +211,7 @@ namespace WorldCup.Data
                             FullName = "Trent",
                             Surname = "Alexander-Arnold",
                             Bio = "Biography of Trent Alexander-Arnold",
-                            State = State.England,
+                            State = State.Australia,
                             ClubId = 1,
                         },
                         new Player()
@@ -220,7 +220,7 @@ namespace WorldCup.Data
                             FullName = "Jordan",
                             Surname = "Henderson",
                             Bio = "Biography of Jordan Henderson",
-                            State = State.England,
+                            State = State.Costa_Rica,
                             ClubId = 1,
                         },
                         new Player()
@@ -238,7 +238,7 @@ namespace WorldCup.Data
                             FullName = "Kylian",
                             Surname = "Mbappe",
                             Bio = "Biography of Kylian Mbappe",
-                            State = State.France,
+                            State = State.Costa_Rica,
                             ClubId = 2,
                         },
                         new Player()
@@ -247,7 +247,7 @@ namespace WorldCup.Data
                             FullName = "Bruno",
                             Surname = "Fernandes",
                             Bio = "Biography of Bruno Fernandes",
-                            State = State.Portugal,
+                            State = State.Argentina,
                             ClubId = 3,
                         },
                         new Player()
@@ -256,7 +256,7 @@ namespace WorldCup.Data
                             FullName = "Karim",
                             Surname = "Benzema",
                             Bio = "Biography of Karim Benzema",
-                            State = State.France,
+                            State = State.Brazil,
                             ClubId = 5,
                         },
                         new Player()
@@ -265,7 +265,7 @@ namespace WorldCup.Data
                             FullName = "Pedri",
                             Surname = "Gonzalez",
                             Bio = "Biography of Pedri Gonzzalez",
-                            State = State.Spain,
+                            State = State.Canada,
                             ClubId = 6,
                         },
                         new Player()

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup\\WorldCup.csproj": {}
+    "C:\\Users\\albin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup\\WorldCup.csproj": {
+    "C:\\Users\\albin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "projectUniqueName": "C:\\Users\\albin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
         "projectName": "WorldCup",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup\\WorldCup.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup\\obj\\",
+        "projectPath": "C:\\Users\\albin\\Documents\\GitHub\\WorldCup\\WorldCup\\WorldCup.csproj",
+        "packagesPath": "C:\\Users\\albin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\albin\\Documents\\GitHub\\WorldCup\\WorldCup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\albin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,6 +74,18 @@
               "target": "Package",
               "version": "[4.5.0, )"
             },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
+            },
+            "System.Net.Mail": {
+              "target": "Package",
+              "version": "[1.0.0-rtm-00002, )"
+            },
+            "System.Net.Mail.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.21, )"
+            },
             "X.PagedList.Mvc.Core": {
               "target": "Package",
               "version": "[7.6.0, )"
@@ -98,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

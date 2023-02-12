@@ -4,7 +4,8 @@
     {
         public double Total { get; set; }
         public int Views { get; set; }
-        public double Sasia { get; set; }
+		public int NewsViews { get; set; }
+		public double Sasia { get; set; }
     }
 
   

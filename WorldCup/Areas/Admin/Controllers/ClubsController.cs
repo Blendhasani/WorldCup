@@ -10,7 +10,6 @@ using WorldCup.Models;
 
 namespace WorldCup.Areas.Admin.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
     [Area("Admin")]
 	public class ClubsController : Controller
 	{
@@ -24,21 +23,23 @@ namespace WorldCup.Areas.Admin.Controllers
             _context= context;
             _photoService= photoService;    
 		}
-        [Route("Admin/Clubs/Index")]
+        [Route("Clubs/Index")]
         public async Task<IActionResult> Index()
         {
             var data = await _clubsService.GetAllAsync();
             return View(data);
         }
 
-   
+
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/Create")]
         public IActionResult Create()
 		{
 			return View();
 		}
-     
 
+
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/Create/{id?}")]
         [HttpPost]
 		public async Task<IActionResult> Create(ClubVM clubs)
@@ -74,6 +75,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(clubDetails);
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Clubs/Edit/{id?}")]
         public async Task<IActionResult> Edit(int id)
         {
@@ -82,6 +84,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(clubDetails);
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Clubs/Edit/{id?}")]
          
         [HttpPost]
@@ -96,6 +99,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/Delete/{id?}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -103,6 +107,8 @@ namespace WorldCup.Areas.Admin.Controllers
             if (clubDetails == null) return View("NotFound");
             return View(clubDetails);
         }
+
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/Delete/{id?}")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -114,6 +120,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/Sorting/{sorder?}/{search?}")]
         public async Task<IActionResult> Sorting(string sortOrder, string searchString)
         {
@@ -140,6 +147,8 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(clubs.ToList());
         }
 
+
+        [Authorize(Roles = UserRoles.Admin)]
         [Route("Admin/Clubs/CheckUsernameAvailability/{userdata?}")]
         public JsonResult CheckUsernameAvailability(string userdata)
         {

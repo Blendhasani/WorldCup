@@ -12,7 +12,7 @@
 
 		<div class="row">
 			<div class="col-md-8 offset-2">
-				<form asp-action="Create">
+				<form asp-action="Create" enctype="multipart/form-data">
 					<div asp-validation-summary="ModelOnly" class="text-danger">
 					</div>
 					<div class="col-md-4 offset-4 text-center">
@@ -30,17 +30,13 @@
 					</div>
 					<div class="form-group">
 						<label asp-for="ThumbnailUrl" class="control-label"></label>
-						<input asp-for="ThumbnailUrl" class="form-control" />
+						<input type="file"  asp-for="ThumbnailUrl" class="form-control" />
 						<span asp-validation-for="ThumbnailUrl" class="text-danger"></span>
 					</div>
-@*					<div class="form-group">
-						<label asp-for="AuthorId" class="control-label"></label>
-						<select asp-for="AuthorId" class="form-control" asp-items="ViewBag.Authors"></select>
-						<span asp-validation-for="AuthorId" class="text-danger"></span>
-					</div>*@
+
 					<div class="form-group">
 						<label asp-for="SecondaryImageUrl" class="control-label"></label>
-						<input asp-for="SecondaryImageUrl" class="form-control" />
+						<input type="file" asp-for="SecondaryImageUrl" class="form-control" />
 						<span asp-validation-for="SecondaryImageUrl" class="text-danger"></span>
 					</div>
 					<div class="form-group">

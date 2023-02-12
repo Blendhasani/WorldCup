@@ -1,0 +1,32 @@
+﻿Send Email
+
+<form method="post" asp-controller="Email" asp-action="Index">
+    <div>
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient" />
+    </div>
+    <div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" />
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <button type="submit">Send Email</button>
+</form>
+
+@if (ViewBag.StatusCode != null)
+{
+    <p>
+        Email sending status:
+        @if (ViewBag.StatusCode == System.Net.HttpStatusCode.Accepted)
+        {
+            <span style="color:green;">Success</span>
+        }
+        else
+        {
+            <span style="color:red;">Error</span>
+        }
+    </p>
+}

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using SendGrid.Helpers.Mail;
+using SendGrid;
 using System.Security.Policy;
 using WorldCup.Areas.Admin.Data.Services;
 using WorldCup.Data;
@@ -10,13 +12,30 @@ using WorldCup.Data.Cart;
 using WorldCup.Data.Helpers;
 using WorldCup.Data.Services;
 using WorldCup.Models;
-
+using SendGrid;
+using SendGrid.Helpers.Mail;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
-//Konfigurimi i serviceve
+
+
+var apiKey = "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";
+var client = new SendGridClient(apiKey);
+var msg = new SendGridMessage()
+{
+    From = new EmailAddress("saraqialbin@gmail.com", "Albin"),
+    Subject = "Sending with Twilio SendGrid is Fun",
+    PlainTextContent = "and easy to do anywhere, especially with C#"
+};
+msg.AddTo(new EmailAddress("as51465@ubt-uni.net", "as51465@ubt-uni.net"));
+var response = await client.SendEmailAsync(msg);
+
+// A success status code means SendGrid received the email request and will process it.
+// Errors can still occur when SendGrid tries to send the email. 
+// If email is not received, use this URL to debug: https://app.sendgrid.com/email_activity 
+Console.WriteLine(response.IsSuccessStatusCode ? "Email queued successfully!" : "Something went wrong!");
 builder.Services.AddScoped<IHightlightsService, HighlightsService>();
 builder.Services.AddScoped<INewsService, NewsService>();
 builder.Services.AddScoped<IAuthorsService, AuthorsService>();

@@ -18,10 +18,11 @@ namespace WorldCup.Controllers
 	public class ProductsController : Controller
 	{
 		private readonly IProductsService _productsService;
-
-		public ProductsController(IProductsService productsService)
+		private readonly IPhotoService _photoService;
+		public ProductsController(IProductsService productsService, IPhotoService photoService)
 		{
 			_productsService = productsService;
+			_photoService = photoService;
 		}
 		[AllowAnonymous]
 		public async Task<IActionResult> Index(int? page)
@@ -78,15 +79,29 @@ namespace WorldCup.Controllers
 		//Get :products/Create
 
 		[HttpPost]
-		public async Task<IActionResult> Create(Product products)
+
+		public async Task<IActionResult> Create(ProductDTO productDTO)
 		{
 			if (!ModelState.IsValid)
 			{
-				return View(products);
+				return View(productDTO);
 			}
-			await _productsService.AddAsync(products);
+
+			var result = await _photoService.AddPhotoAsync(productDTO.ImgUrl);
+			var product = new Product
+			{
+				Name = productDTO.Name,
+				Description = productDTO.Description,
+				ImgUrl = result.Url.ToString(),
+				Price = productDTO.Price,
+				ProductType = productDTO.ProductType,
+				State = productDTO.State
+			};
+
+			await _productsService.AddAsync(product);
 			return RedirectToAction(nameof(Index));
 		}
+
 
 
 		public async Task<IActionResult> Edit(int id)
@@ -235,7 +250,7 @@ namespace WorldCup.Controllers
 		public async Task<IActionResult> Croatia()
 		{
 			var allProducts = await _productsService.GetAllAsync();
-			State s = State.Croatia;
+			State s = State.Brazil;
 			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
 			return View("Filtered", filterResults);
 		}
@@ -243,50 +258,14 @@ namespace WorldCup.Controllers
 		public async Task<IActionResult> Denmark()
 		{
 			var allProducts = await _productsService.GetAllAsync();
-			State s = State.Denmark;
+			State s = State.Belgium;
 			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
 			return View("Filtered", filterResults);
 		}
-		[AllowAnonymous]
-		public async Task<IActionResult> Ecuador()
-		{
-			var allProducts = await _productsService.GetAllAsync();
-			State s = State.Ecuador;
-			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
-			return View("Filtered", filterResults);
-		}
-		[AllowAnonymous]
-		public async Task<IActionResult> England()
-		{
-			var allProducts = await _productsService.GetAllAsync();
-			State s = State.England;
-			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
-			return View("Filtered", filterResults);
-		}
-		[AllowAnonymous]
-		public async Task<IActionResult> France()
-		{
-			var allProducts = await _productsService.GetAllAsync();
-			State s = State.France;
-			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
-			return View("Filtered", filterResults);
-		}
-		[AllowAnonymous]
-		public async Task<IActionResult> Portugal()
-		{
-			var allProducts = await _productsService.GetAllAsync();
-			State s = State.Portugal;
-			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
-			return View("Filtered", filterResults);
-		}
-		[AllowAnonymous]
-		public async Task<IActionResult> Poster()
-		{
-			var allProducts = await _productsService.GetAllAsync();
-			ProductType s = ProductType.Poster;
-			var filterResult = allProducts.Where(n => n.ProductType.Equals(s)).ToList();
-			return View("Filtered", filterResult);
-		}
+		
+
+		
+	
 		[AllowAnonymous]
 		public async Task<IActionResult> Headwear()
 		{

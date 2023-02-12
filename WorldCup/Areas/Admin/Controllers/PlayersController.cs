@@ -9,9 +9,10 @@ using WorldCup.Data.Static;
 
 namespace WorldCup.Areas.Admin.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
+   
 
     [Area("Admin")]
+   
     public class PlayersController : Controller
     {
         private readonly IPlayersService _service;
@@ -20,8 +21,8 @@ namespace WorldCup.Areas.Admin.Controllers
         {
             _service = service;
         }
-        [AllowAnonymous]
-        [Route("Admin/Players/Index")]
+        
+        [Route("Players/Index")]
         public async Task<IActionResult> Index()
         {
             var data = await _service.GetAllAsync();
@@ -29,6 +30,7 @@ namespace WorldCup.Areas.Admin.Controllers
         }
 
         //Get: Players/Create
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> Create()
         {
             var playerDropdownData = await _service.GetPlayerDropdownValues();
@@ -36,6 +38,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View();
         }
 
+        [Authorize(Roles = UserRoles.Admin)]
         [HttpPost]
         public async Task<IActionResult> Create(Player player)
         {
@@ -48,7 +51,7 @@ namespace WorldCup.Areas.Admin.Controllers
             await _service.AddAsync(player);
             return RedirectToAction(nameof(Index));
         }
-
+   
         //Get: Actors/Details/1
         [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
@@ -59,7 +62,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(playerDetails);
         }
 
-
+        [Authorize(Roles = UserRoles.Admin)]
         // Edit
         public async Task<IActionResult> Edit(int id)
         {
@@ -79,7 +82,7 @@ namespace WorldCup.Areas.Admin.Controllers
             return View(playerDetails);
         }
 
-
+        [Authorize(Roles = UserRoles.Admin)]
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Player player)
         {
@@ -98,7 +101,7 @@ namespace WorldCup.Areas.Admin.Controllers
             await _service.UpdateAsync(id, player);
             return RedirectToAction(nameof(Index));
         }
-
+        [Authorize(Roles = UserRoles.Admin)]
         //Get: Players/Delete/1
         public async Task<IActionResult> Delete(int id)
         {
@@ -106,7 +109,7 @@ namespace WorldCup.Areas.Admin.Controllers
             if (playerDetails == null) return View("NotFound");
             return View(playerDetails);
         }
-
+        [Authorize(Roles = UserRoles.Admin)]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

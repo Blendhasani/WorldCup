@@ -36,12 +36,14 @@ namespace WorldCup.Areas.Admin.Controllers
             double sum = orderItems.Sum(oi => oi.Price * oi.Amount);
             double sasia = orderItems.Sum(oi => oi.Amount);
             int totalCount = _context.Highlights.Sum(x => x.Count);
+			int totalCountNews = _context.News.Sum(x => x.ViewCount);
 
-            var model = new OrderStatisticsViewModel
+			var model = new OrderStatisticsViewModel
             {
                 Total = sum,
                 Views = totalCount,
-                Sasia = sasia
+                Sasia = sasia,
+                NewsViews = totalCountNews
             };
 
             return View(model);

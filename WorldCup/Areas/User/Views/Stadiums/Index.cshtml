@@ -3,16 +3,16 @@
 @model IEnumerable<Stadium>
 @{
 	ViewData["Title"] = "Stadiums";
+	
+
+}
+<div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
 	@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
 	{
 		<div class="text-end ">
 			<a asp-controller="Stadiums" asp-action="Create" class="btn btn-success">Create</a>
 		</div>
 	}
-
-}
-<div class="row" style="margin-right:2%; margin-left:2%;margin-top:20px;">
-
 	@foreach (var item in Model)
 	{
 		<div class="col-md-4 col-xs-6 mb-3" style="margin-bottom:30px;">
@@ -46,6 +46,7 @@
 						<b>@item.Name</b>
 
 					</p>
+
 
 
 

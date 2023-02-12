@@ -33,7 +33,7 @@
             <h4 class="card-title">Total Profit</h4>
             <p class="card-text">The total profit of all the orders</p>
             <h1>
-                @Model.Total Euro
+                    @(Model.Total + Math.Round(@Model.NewsViews * 0.05, 2)) Euro
             </h1>
         </div>
     </div>
@@ -48,4 +48,24 @@
         </div>
     </div>
 </div>
+    <div class="card-center">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+
+            <div class="card-body">
+                <h4 class="card-title">Total Highlight Views</h4>
+                <p class="card-text">The total profit of all the orders</p>
+                <h1> @Model.NewsViews Views </h1>
+            </div>
+        </div>
+    </div>
+       <div class="card-center">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+
+            <div class="card-body">
+                <h4 class="card-title">Total Highlight Views</h4>
+                <p class="card-text">The total profit of all the orders</p>
+                <h1> @Math.Round(@Model.NewsViews * 0.05, 2) Euro </h1>
+            </div>
+        </div>
+    </div>
 </div>
