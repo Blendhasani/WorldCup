@@ -90,6 +90,7 @@ namespace WorldCup.Controllers
             // Send email to user with details of the order
             try
             {
+
                 using (MailMessage mail = new MailMessage())
                 {
                     mail.From = new MailAddress("mygganbu@gmail.com");
@@ -101,7 +102,7 @@ namespace WorldCup.Controllers
                    
                     emailBody += "Estimated Shipment Date: " + order.ShipmentDate + "\n\n";
                     emailBody += "Items Purchased:\n";
-                    emailBody += "\nThank you for your business!\n\nBest regards,\nMy Online Store";
+                    emailBody += "\nThank you for your business!\n\nBest regards,\nMy NFT KOSOVA STORE";
                     mail.Body = emailBody;
                     mail.IsBodyHtml = false;
                     using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
