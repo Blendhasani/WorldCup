@@ -28,7 +28,7 @@
 			<div class="container-fluid">
                 @if (User.IsInRole("Admin"))
                 {
-                    <a class="navbar-brand d-inline-flex align-content-center" asp-area="" asp-controller="Home" asp-action="Index"><img src="../images/logo.png" onerror="this.onerror=null;this.src='../../images/logo.png';"  style="width:50px; height:45px; " /> <h2 style="font-family:Qatar; margin:6px 0px 0px 0px">Admin Area</h2></a>
+                    <a class="navbar-brand d-inline-flex align-content-center nav-link" asp-area="" asp-controller="Home" asp-action="Index"><img src="../images/logo.png" onerror="this.onerror=null;this.src='../../images/logo.png';"  style="width:50px; height:45px; " /> <h2 style="font-family:Qatar; margin:6px 0px 0px 0px">Admin Area</h2></a>
                 }
                 <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -198,9 +198,28 @@
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	<!-- MDB -->
-		<script type="text/javascript"
-			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js">
-		</script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js">
+	</script>
+    <script>
+        $(document).ready(function () {
+            var currentPage = window.location.pathname;
+            $(".nav-link").each(function () {
+                if ($(this).attr("href") == currentPage) {
+                    $(this).addClass("active");
+                }
+            });
+        });
+    </script>
+
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<style>
+    .nav-link.active {
+        text-decoration: underline white;
+        text-underline-offset: 0.5rem;
+        transition: .2s ease-in-out;
+    }
+</style>
