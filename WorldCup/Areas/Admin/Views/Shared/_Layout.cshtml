@@ -198,9 +198,28 @@
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	<!-- MDB -->
-		<script type="text/javascript"
-			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js">
-		</script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js">
+	</script>
+    <script>
+        $(document).ready(function () {
+            var currentPage = window.location.pathname;
+            $(".nav-link").each(function () {
+                if ($(this).attr("href") == currentPage) {
+                    $(this).addClass("active");
+                }
+            });
+        });
+    </script>
+
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<style>
+    .nav-link.active {
+        text-decoration: underline white;
+        text-underline-offset: 0.5rem;
+        transition: .2s ease-in-out;
+    }
+</style>
