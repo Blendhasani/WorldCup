@@ -186,6 +186,31 @@ namespace WorldCup.Controllers
 			}
 			return View("Filtered", allProducts);
 		}
+		[AllowAnonymous]
+		public async Task<IActionResult> Filteri(ProductType productType)
+		{
+			var allProducts = await _productsService.GetAllAsync();
+
+			if (productType != null)
+			{
+				var filterResult = allProducts.Where(n => n.ProductType == productType).ToList();
+				return View("Filtered", filterResult);
+			}
+			return View("Filtered", allProducts);
+		}
+		[AllowAnonymous]
+		public async Task<IActionResult> FilterState(State state)
+		{
+			var allProducts = await _productsService.GetAllAsync();
+
+			if (state != 0)
+			{
+				var filterResult = allProducts.Where(n => n.State == state).ToList();
+				return View("Filtered", filterResult);
+			}
+			return View("Filtered", allProducts);
+		}
+
 
 
 		//states sorted dropdown
@@ -262,10 +287,27 @@ namespace WorldCup.Controllers
 			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
 			return View("Filtered", filterResults);
 		}
-		
-
-		
 	
+
+		[AllowAnonymous]
+		public async Task<IActionResult> France()
+		{
+			var allProducts = await _productsService.GetAllAsync();
+			State s = State.France;
+			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
+			return View("Filtered", filterResults);
+		}
+		[AllowAnonymous]
+		public async Task<IActionResult> England()
+		{
+			var allProducts = await _productsService.GetAllAsync();
+			State s = State.England;
+			var filterResults = allProducts.Where(n => n.State.Equals(s)).ToList();
+			return View("Filtered", filterResults);
+		}
+
+
+
 		[AllowAnonymous]
 		public async Task<IActionResult> Headwear()
 		{

@@ -17,10 +17,14 @@ namespace WorldCup.Data.Enums
 		Cameroon,
 		[Description("Canada")]
 		Canada,
-		[Description("Costa_Rica")]
+		[Description("Costa Rica")]
 		Costa_Rica,
-	
-		
+		[Description("France")]
+		France,
+		[Description("England")]
+		England,
+
+
 	}
 }
 
